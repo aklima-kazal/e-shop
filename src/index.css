@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-roboto: "Roboto Condensed", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
+}
+@utility container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+@media (max-width: 575px) {
+  container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  container {
+    max-width: 500px;
+    padding: 0 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  container {
+    max-width: 720px;
+    padding: 0 15px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  container {
+    max-width: 960px;
+    padding: 0 15px;
+  }
+}
+@media (min-width: 1200px) {
+  container {
+    max-width: 1140px;
+    padding: 0 15px;
+  }
+}
