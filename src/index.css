@@ -1,17 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet");
 
 @theme {
-  --font-roboto: "Roboto Condensed", sans-serif;
-  --font-inter: "Inter", sans-serif;
-  --breakpoint-xs: 320px;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --breakpoint-xxl: 1400px;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --color-black: #303030;
+  --color-white: #ffffff;
+  --color-yellow: #fed550;
+  --color-orange: #ff624c;
+  --color-purple: #1a237b;
+  --color-red: #bd0034;
+  --color-blue: #00579f;
+  --color-white01: #cccccc;
+  --color-white02: #f4f4f4;
+  --color-purple01: #283b82;
+  --color-blue01: #469bdb;
 }
 @utility container {
   max-width: 1170px;
