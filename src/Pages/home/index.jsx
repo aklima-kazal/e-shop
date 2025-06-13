@@ -1,6 +1,9 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import Container from "../../globalcomponents/Container";
+import { Helmet } from "react-helmet-async";
+import Banner from "./components/Banner";
+import SupportSection from "./components/support";
+import FeaturedProducts from "./components/featuredProducts";
 
 const Home = () => {
   return (
@@ -9,7 +12,9 @@ const Home = () => {
         <title>Home</title>
       </Helmet>
       <Container>
-        <h1 className="">this is my home page</h1>
+        <Banner />
+        <SupportSection />
+        <FeaturedProducts />
       </Container>
     </>
   );

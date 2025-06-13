@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "../../../Container";
 import NumberandAddress from "./NumberandAddress";
+import SocialsWithLanguage from "./SocialsWithLanguage";
 
 const TopBar = () => {
   return (
@@ -11,7 +12,9 @@ const TopBar = () => {
             <div className="">
               <NumberandAddress />
             </div>
-            <div>right</div>
+            <div>
+              <SocialsWithLanguage />
+            </div>
           </div>
         </Container>
       </div>

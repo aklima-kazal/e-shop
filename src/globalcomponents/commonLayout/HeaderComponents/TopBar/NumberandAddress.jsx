@@ -5,7 +5,7 @@ import { SlLocationPin } from "react-icons/sl";
 const NumberandAddress = () => {
   return (
     <>
-      <div className="flex items-center gap-12">
+      <div className="flex items-center gap-12 w-full">
         <div className="flex items-center gap-2">
           <div>
             <SlLocationPin />
