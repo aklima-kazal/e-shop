@@ -7,12 +7,14 @@ import ProductCard from "../../../../globalcomponents/productCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { featuredData } from "./featuredData";
 import NextButton from "./NextButton";
+import PrevButton from "./PrevButton";
+import { Navigation } from "swiper/modules";
 const FeaturedProducts = () => {
   const { t } = useTranslation();
   return (
     <>
       <Container>
-        <div className="mt-[80px]">
+        <div className="relative mt-[80px]">
           <div className="flex items-center justify-between mt-[80px]">
             <h3 className="text-[36px] font-semibold text-black font-poppins">
               {t("Featured_Products")}
@@ -28,15 +30,21 @@ const FeaturedProducts = () => {
               </span>
             </Link>
           </div>
-          <div>
+          <div className="flex items-center justify-between top-2/4 -translate-y-2/4 absolute z-50 -right-5 swiper-button-next cursor-pointer">
             <NextButton />
+          </div>
+          <div className="flex items-center justify-between top-2/4 -translate-y-2/4 absolute z-50 -left-5 swiper-button-prev cursor-pointer">
+            <PrevButton />
           </div>
 
           <Swiper
             spaceBetween={50}
             slidesPerView={5}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
+            modules={[Navigation]}
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
           >
             {featuredData?.map((product) => (
               <SwiperSlide>

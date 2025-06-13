@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../../../Container";
-import MenuLeftBarLayout from "./menubarLayouts/menuleftbarLayout";
-import MenuRightBarLayout from "./menubarLayouts/menurightbarLayout";
+import MenuLeftBarLayout from "./menubarLayouts/MenuLeftBarLayout";
+import MenuRightBarLayout from "./menubarLayouts/MenuRightBarLayout";
 
 const Menubar = () => {
   return (

@@ -24,7 +24,7 @@ export const catagoriesItems = [
   {
     label: (
       <Link
-        to="/product "
+        to="/product"
         className="flex items-center gap-x-2 text-[16px] font-normal text-white font-montserrat"
       >
         <FaMobileScreen color="#FF624C" />
