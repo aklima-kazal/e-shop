@@ -1,10 +1,12 @@
-import { Tooltip } from "antd";
+import { Progress, Tooltip } from "antd";
 import { Link } from "react-router-dom";
 import { FaOpencart } from "react-icons/fa6";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { getStars } from "../../../../utils/generateRating";
 import { getDiscountPrice } from "../../../../utils/getDiscountPrice";
+import useStockStatus from "../../hooks/useStockStatus";
+import { SiOllama } from "react-icons/si";
 
 const SpringProductCard = ({
   image,
@@ -14,7 +16,10 @@ const SpringProductCard = ({
   ratings,
   totalRatings,
   price,
+  stock,
+  sold,
 }) => {
+  const { status, color, percentage } = useStockStatus(sold, stock);
   return (
     <>
       <div className="relative  hover:bg-white transition-all ease-in duration-300 p-6 rounded-[10px] cursor-pointer bg-white01 ">
@@ -76,6 +81,13 @@ const SpringProductCard = ({
                 ${price}
               </p>
             )}
+          </div>
+          <div className="w-full bg-gray-400 rounded-xl relative z-1">
+            <div
+              style={{ width: `${percentage}%`, backgroundColor: color }}
+              className="absolute top-0 left-0 h-full rounded-xl -z-1"
+            ></div>
+            <h4 className="text-center">{status}</h4>
           </div>
         </div>
       </div>

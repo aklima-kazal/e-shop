@@ -22,7 +22,7 @@ export const SpringSaleData = [
     price: 500,
     discount: 50,
     stock: 1000,
-    sold: 500,
+    sold: 980,
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ export const SpringSaleData = [
     price: 500,
     discount: 30,
     stock: 100,
-    sold: 50,
+    sold: 90,
   },
   {
     id: 4,

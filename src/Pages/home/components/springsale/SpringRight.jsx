@@ -36,6 +36,8 @@ const SpringRight = () => {
                 ratings={product.ratings}
                 totalRatings={product.totalRatings}
                 price={product.price}
+                stock={product.stock}
+                sold={product.sold}
               />
             </SwiperSlide>
           ))}
