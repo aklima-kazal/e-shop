@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <>
       <Container>
-        <div className="grid grid-cols-2 items-center justify-between p-8">
+        <div className="grid grid-cols-2 items-center justify-between py-4 px-10">
           <Link to="/">
             <Logo />
           </Link>

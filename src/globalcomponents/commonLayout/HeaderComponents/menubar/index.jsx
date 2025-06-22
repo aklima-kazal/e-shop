@@ -6,9 +6,9 @@ import MenuRightBarLayout from "./menubarLayouts/MenuRightBarLayout";
 const Menubar = () => {
   return (
     <>
-      <div className="bg-orange py-6">
+      <div className="bg-orange py-4 px-10">
         <Container>
-          <div className="grid grid-cols-2 items-center justify-between">
+          <div className="grid grid-cols-2 items-center justify-between ">
             <div>
               <MenuLeftBarLayout />
             </div>

@@ -1,13 +1,12 @@
 import { Tooltip } from "antd";
-import React from "react";
 import { Link } from "react-router-dom";
-import { getStars } from "../../utils/generateRating";
-import { getDiscountPrice } from "../../utils/getDiscountPrice";
 import { FaOpencart } from "react-icons/fa6";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { IoShareSocialOutline } from "react-icons/io5";
+import { getStars } from "../../../../utils/generateRating";
+import { getDiscountPrice } from "../../../../utils/getDiscountPrice";
 
-const ProductCard = ({
+const SpringProductCard = ({
   image,
   discount,
   pCategory,
@@ -18,27 +17,15 @@ const ProductCard = ({
 }) => {
   return (
     <>
-      <div className="group relative border border-transparent hover:border-white01 p-6 rounded-[10px] cursor-pointer w-[285px]">
-        <div className="w-full h-[214px] overflow-hidden rounded-[10px] mb-3">
-          <img src={image} alt="img" />
+      <div className="relative  hover:bg-white transition-all ease-in duration-300 p-6 rounded-[10px] cursor-pointer bg-white01 ">
+        <div className="w-full h-[345px] overflow-hidden object-cover rounded-[10px] mb-3">
+          <img src={image} alt="img" className="w-full h-full object-cover " />
         </div>
-        <div className="absolute top-[50%] left-[50%] translate-y-[-50%] -translate-x-2/4 invisible group-hover:visible transition-all ease-in duration-300 items-center">
-          <div className="flex items-center gap-x-4">
-            <div className="w-[50px] h-[50px]  text-orange flex items-center border border-orange rounded-full bg-white p-3 justify-center hover:bg-orange hover:text-white">
-              <FaOpencart size={20} />
-            </div>
-            <div className="w-[50px] h-[50px]  text-orange flex items-center border border-orange rounded-full bg-white p-3 justify-center hover:bg-orange hover:text-white">
-              <IoIosHeartEmpty size={20} />
-            </div>
-            <div className="w-[50px] h-[50px]  text-orange flex items-center border border-orange rounded-full bg-white p-3 justify-center hover:bg-orange hover:text-white">
-              <IoShareSocialOutline size={20} />
-            </div>
-          </div>
-        </div>
-        {discount && (
-          <div className="absolute top-3 right-6 bg-orange px-3 py-1  w-fit rounded-[5px]">
-            <span className="text-[16px] font-bold text-white font-montserrat">
-              -{discount}%
+
+        {getDiscountPrice && (
+          <div className="absolute top-2 right-5 bg-orange px-5 py-1.5  w-[100px] h-[100px] rounded-full items-center justify-center flex">
+            <span className="text-[24px] font-semibold text-white font-poppins">
+              {discount}%
             </span>
           </div>
         )}
@@ -96,4 +83,4 @@ const ProductCard = ({
   );
 };
 
-export default ProductCard;
+export default SpringProductCard;
