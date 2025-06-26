@@ -9,6 +9,7 @@
   --color-orange: #ff624c;
   --color-purple: #1a237b;
   --color-red: #bd0034;
+  --color-gray: #c4c4c4;
   --color-blue: #00579f;
   --color-white01: #cccccc;
   --color-white02: #f4f4f4;
@@ -20,4 +21,57 @@
   border: none !important;
   box-shadow: none !important;
   outline: none !important;
+}
+.custom-collapse {
+  background-color: white !important;
+  padding: 10px !important;
+  border: none !important;
+  border-radius: 25px !important;
+  margin-bottom: 20px !important;
+}
+.custom-collapse:last-child {
+  margin-bottom: 0 !important;
+}
+.custom-collapse .ant-collapse-content {
+  border-top: none !important;
+}
+.custom-collapse .ant-collapse-header {
+  display: flex !important;
+  align-items: center !important;
+  column-gap: 32px !important;
+}
+.custom-collapse .ant-collapse-expand-icon {
+  height: 32px !important;
+  width: 32px !important;
+  padding-inline-end: 0 !important;
+  background-color: #ff624c !important;
+  border-radius: 50% !important;
+  border: 2px solid #ff624c !important;
+  justify-content: center !important;
+}
+.custom-collapse .ant-collapse-expand-icon svg {
+  color: white !important;
+}
+.custom-collapse
+  .ant-collapse-header[aria-expanded="true"]
+  .ant-collapse-expand-icon {
+  background-color: #ffffff !important;
+}
+.custom-collapse
+  .ant-collapse-header[aria-expanded="true"]
+  .ant-collapse-expand-icon
+  svg {
+  color: #ff624c !important;
+}
+.custom-collapse .ant-collapse-header-text {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  color: #303030 !important;
+}
+.custom-collapse .ant-collapse-content-box {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  color: #303030 !important;
 }

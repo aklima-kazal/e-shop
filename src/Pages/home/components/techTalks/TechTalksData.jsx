@@ -1,0 +1,51 @@
+import blogImage from "../../../../assets/Images/Blog/blogimg.jpg";
+export const TechTalksData = [
+  {
+    id: 1,
+    image: blogImage,
+    title: "Our Category Choices for Top 10 Tech Gadgets in 2023",
+    catagory: "Gadgets",
+    postedBy: "faizan",
+    date: "01/01/2023",
+  },
+  {
+    id: 2,
+    image: blogImage,
+    title: "How to Choose the Right Laptop for Your Needs: Our Expert Says",
+    catagory: "Tips",
+    postedBy: "faizan",
+    date: "01/01/2023",
+  },
+  {
+    id: 3,
+    image: blogImage,
+    title: "High Quality vs Price: Why You Should Upgrade to A Smart TV?",
+    catagory: "Review",
+    postedBy: "ahmed",
+    date: "01/01/2023",
+  },
+  {
+    id: 4,
+    image: blogImage,
+    title: "Our Category Choices for Top 10 Tech Gadgets in 2023",
+    catagory: "Gadgets",
+    postedBy: "danish",
+    date: "01/01/2023",
+  },
+  {
+    id: 5,
+    image: blogImage,
+    title: "Our Category Choices for Top 10 Tech Gadgets in 2023",
+    catagory: "tips",
+    postedBy: "hasan",
+    date: "01/01/2023",
+  },
+  {
+    id: 6,
+    image: blogImage,
+    title: "Our Category Choices for Top 10 Tech Gadgets in 2023",
+    catagory: "Guide",
+    postedBy: "rahul",
+    date: "01/01/2023",
+  },
+];
