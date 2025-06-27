@@ -1,6 +1,5 @@
-import React from "react";
 import SubscribeForm from "../../../../globalcomponents/subscribe/form";
-import SubscribeImg from "../../../../assets/images/subscribeimg.png";
+import SubscribeImg from "../../../../../src/assets/Images/subscribeimg.png";
 
 const Subscribe = () => {
   return (
