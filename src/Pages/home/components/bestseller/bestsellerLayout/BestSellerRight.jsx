@@ -1,4 +1,4 @@
-import promoBanner from "../../../../../../src/assets/Images/products/promobanner.jpg";
+import promoBanner from "@/assets/Images/products/promobanner.jpg";
 
 const BestSellerRight = () => {
   return (
