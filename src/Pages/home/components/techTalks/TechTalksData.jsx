@@ -1,4 +1,4 @@
-import blogImage from "../../../../assets/Images/Blog/blogimg.jpg";
+import blogImage from "../../../../../src/assets/Images/Blog/blogimg.jpg";
 export const TechTalksData = [
   {
     id: 1,

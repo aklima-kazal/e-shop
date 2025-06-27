@@ -1,8 +1,8 @@
-import Samsung from "../../../assets/Images/samsung.png";
-import OpenAI from "../../../assets/Images/openai.png";
-import Amazon from "../../../assets/Images/amazon.png";
-import Tencent from "../../../assets/Images/tencent.png";
-import Spotify from "../../../assets/Images/spotify.png";
+import Samsung from "../../../../src/assets/Images/samsung.png";
+import OpenAI from "../../../../src/assets/Images/openai.png";
+import Amazon from "../../../../src/assets/Images/amazon.png";
+import Tencent from "../../../../src/assets/Images/tencent.png";
+import Spotify from "../../../../src/assets/Images/spotify.png";
 
 const Companies = () => {
   return (
