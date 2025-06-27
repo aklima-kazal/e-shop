@@ -1,4 +1,4 @@
-import Productwatch from "../../../../../src/assets/Images/products/watch.webp";
+import Productwatch from "../../../../assets/Images/products/watch.webp";
 export const featuredData = [
   {
     id: 1,
