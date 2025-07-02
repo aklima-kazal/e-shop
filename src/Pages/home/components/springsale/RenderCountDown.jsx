@@ -3,12 +3,12 @@ import React from "react";
 const RenderCountDown = ({ days, hours, minutes, seconds }) => {
   return (
     <>
-      <div className="flex gap-x-8 items-center">
+      <div className="flex gap-x-1 md:gap-x-8 items-center">
         <div className="text-center">
-          <h4 className="text-[36px] font-poppins font-semibold text-orange">
+          <h4 className="text-[28px] md:text-[36px] font-poppins font-semibold text-orange">
             {days}
           </h4>
-          <span className="text-[16px] font-montserrat font-normal text-black">
+          <span className="text-[14px] md:text-[16px] font-montserrat font-normal text-black">
             Days
           </span>
         </div>
@@ -16,10 +16,10 @@ const RenderCountDown = ({ days, hours, minutes, seconds }) => {
           :
         </span>
         <div className="text-center">
-          <h4 className="text-[36px] font-poppins font-semibold text-orange">
+          <h4 className="text-[28px] md:text-[36px] font-poppins font-semibold text-orange">
             {hours}
           </h4>
-          <span className="text-[16px] font-montserrat font-normal text-black">
+          <span className="text-[14px] md:text-[16px] font-montserrat font-normal text-black">
             Hours
           </span>
         </div>
@@ -27,10 +27,10 @@ const RenderCountDown = ({ days, hours, minutes, seconds }) => {
           :
         </span>
         <div className="text-center">
-          <h4 className="text-[36px] font-poppins font-semibold text-orange">
+          <h4 className="text-[28px] md:text-[36px] font-poppins font-semibold text-orange">
             {minutes}
           </h4>
-          <span className="text-[16px] font-montserrat font-normal text-black">
+          <span className="text-[14px] md:text-[16px] font-montserrat font-normal text-black">
             Minutes
           </span>
         </div>
@@ -38,10 +38,10 @@ const RenderCountDown = ({ days, hours, minutes, seconds }) => {
           :
         </span>
         <div className="text-center">
-          <h4 className="text-[36px] font-poppins font-semibold text-orange">
+          <h4 className="text-[28px] md:text-[36px] font-poppins font-semibold text-orange">
             {seconds}
           </h4>
-          <span className="text-[16px] font-montserrat font-normal text-black">
+          <span className="text-[14px] md:text-[16px] font-montserrat font-normal text-black">
             Seconds
           </span>
         </div>

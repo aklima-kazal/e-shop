@@ -17,13 +17,13 @@ const Footer = () => {
     <>
       <Container>
         <footer className="px-10 mt-20 mb-6">
-          <div className="grid grid-cols-[1fr_2fr] gap-4 h-full">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-4 h-full ">
             <div className="flex flex-col h-full justify-between">
               <Link to="/">
                 <Logo />
               </Link>
 
-              <div className="mt-8">
+              <div className="mt-8 mb-4 lg:mb-0">
                 <ul>
                   <li className="flex items-center gap-x-4 mb-3">
                     <HiPhone size={20} color="#303030" />
@@ -46,7 +46,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="grid grid-cols-4">
+            <div className="grid grid-cols-2 lg:grid-cols-4 mt-4 lg:mt-0">
               {FooterData?.map((item, index) => {
                 const linkList = item.linkTitle;
                 return (
@@ -69,11 +69,11 @@ const Footer = () => {
                 );
               })}
 
-              <div>
+              <div className="mt-4 lg:mt-0">
                 <h4 className="text-[20px] font-semibold text-black font-poppins">
                   {t("Payments")}
                 </h4>
-                <div className="flex gap-x-4 mt-6">
+                <div className="flex gap-x-2 xl:gap-x-4 mt-6">
                   <img src={visa} alt="visa" />
                   <img src={masterCard} alt="masterCard" />
                   <img src={Apple} alt="Apple" />
@@ -98,7 +98,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-between mt-12 border-t border-gray pt-6">
+          <div className="flex flex-col lg:flex-row  items-center justify-between mt-12 border-t border-gray pt-6">
             <span className="text-[14px] font-montserrat font-normal text-black">
               Copyright © 2023 E-Shop. All Rights Reserved.
             </span>

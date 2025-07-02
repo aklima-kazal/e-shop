@@ -6,7 +6,7 @@ const BestSellerRight = () => {
       <div>
         <img
           src={promoBanner}
-          className="object-cover w-full h-full overflow-hidden"
+          className="object-cover xl:w-full h-full overflow-hidden mx-auto"
           alt="promobanner"
         />
       </div>

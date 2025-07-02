@@ -24,7 +24,11 @@ const SpringProductCard = ({
     <>
       <div className="relative  hover:bg-white transition-all ease-in duration-300 p-6 rounded-[10px] cursor-pointer bg-white01 ">
         <div className="w-full h-[345px] overflow-hidden object-cover rounded-[10px] mb-3">
-          <img src={image} alt="img" className="w-full h-full object-cover " />
+          <img
+            src={image}
+            alt="img"
+            className="w-full lg:w-full h-full object-cover "
+          />
         </div>
 
         {getDiscountPrice && (

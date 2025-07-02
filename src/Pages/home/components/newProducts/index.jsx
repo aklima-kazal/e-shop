@@ -18,24 +18,27 @@ const NewProducts = () => {
         <Container>
           <div className="relative ">
             <div className="flex items-center justify-between mt-[80px]">
-              <h3 className="text-[36px] font-semibold text-black font-poppins">
+              <h3 className="text-[24px] md:text-[36px] font-semibold text-black font-poppins">
                 {t("New_Products")}
               </h3>
 
-              <div className="flex items-center justify-end gap-x-4 w-[50%]">
-                <span className="font-normal font-montserrat text-[16px] text-black">
+              <div className=" flex items-center lg:justify-end gap-x-2 lg:gap-x-4 lg:w-[50%]">
+                <span className="font-normal font-montserrat text-sm lg:text-[16px] text-black">
                   {t("Sort by:")}
                 </span>
-                <div className=" w-[30%]">
+                <div className=" lg:w-[30%]">
                   <AllCatagoryMenu
-                    className="w-full items-center font-montserrat font-bold text-[16px] text-orange cursor-pointer flex justify-between gap-x-4"
+                    className=" w-full items-center font-montserrat font-bold text-sm lg:text-[16px] text-orange cursor-pointer flex justify-between gap-x-4"
                     icons={true}
                   />
                 </div>
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-5 w-[95%]  gap-x-14 mt-10 ">
+          <div
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 
+           xl:w-[95%] mx-auto xl:mx-0 gap-y-5 xl:gap-x-14 mt-10 "
+          >
             {featuredData?.slice(0, initialData)?.map((product) => (
               <ProductCard
                 key={product.id}

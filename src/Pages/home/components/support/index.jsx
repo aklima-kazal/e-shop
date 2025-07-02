@@ -5,21 +5,24 @@ import Container from "../../../../globalcomponents/Container";
 const SupportSection = () => {
   return (
     <>
-      <section className="mt-20 px-10">
+      <section className="mt-10 md:mt-20 px-1 md:px-10">
         <Container>
-          <div className="flex items-center justify-between ">
+          <div className="xs:w-[40%] sm:w-full flex items-center justify-between gap-x-1 sm:gap-x-0">
             {supportData?.map((item, index) => {
               const Icon = item.icon;
               return (
-                <div className="flex items-center gap-x-8 " key={index}>
-                  <span className="text-black">
+                <div
+                  className="flex flex-wrap justify-center items-center gap-x-6 "
+                  key={index}
+                >
+                  <span className="text-black mb-1">
                     <Icon />
                   </span>
-                  <div>
-                    <h3 className="text-[16px] font-bold text-black font-montserrat">
+                  <div className="text-center md:text-left">
+                    <h3 className="text-[14px] md:text-[16px] font-bold text-black font-montserrat">
                       {item.title}
                     </h3>
-                    <p className="text-[16px] font-normal text-black font-montserrat">
+                    <p className="text-[12px] md:text-[16px] font-normal text-black font-montserrat">
                       {item.subtitle}
                     </p>
                   </div>

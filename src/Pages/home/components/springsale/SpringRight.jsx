@@ -5,11 +5,30 @@ import SpringProductCard from "./SpringProductCard";
 import { SpringSaleData } from "./SpringSaleData";
 import NextButton from "../../../../globalcomponents/NextButton";
 import PrevButton from "../../../../globalcomponents/PrevButton";
-
+const breakpoints = {
+  320: {
+    slidesPerView: 1,
+  },
+  576: {
+    slidesPerView: 2,
+  },
+  768: {
+    slidesPerView: 2,
+  },
+  992: {
+    slidesPerView: 2,
+  },
+  1200: {
+    slidesPerView: 2,
+  },
+  1400: {
+    slidesPerView: 2,
+  },
+};
 const SpringRight = () => {
   return (
     <>
-      <div className="relative ">
+      <div className="relative shadow-2xl shadow-gray lg:shadow-none rounded-[50px]">
         <div className="flex items-center justify-between top-[40%] absolute z-50 -right-4 swiper-button-next-spring cursor-pointer ">
           <NextButton />
         </div>
@@ -18,6 +37,7 @@ const SpringRight = () => {
         </div>
         <Swiper
           spaceBetween={10}
+          breakpoints={breakpoints}
           slidesPerView={2}
           modules={[Navigation]}
           navigation={{

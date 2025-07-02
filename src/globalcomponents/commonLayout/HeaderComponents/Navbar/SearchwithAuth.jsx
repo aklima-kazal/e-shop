@@ -1,5 +1,3 @@
-import React from "react";
-import Search from "antd/es/input/Search";
 import { useTranslation } from "react-i18next";
 import { IoIosSearch } from "react-icons/io";
 import { FaOpencart } from "react-icons/fa6";

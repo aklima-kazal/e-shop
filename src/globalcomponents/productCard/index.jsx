@@ -1,5 +1,4 @@
 import { Tooltip } from "antd";
-import React from "react";
 import { Link } from "react-router-dom";
 import { getStars } from "../../utils/generateRating";
 import { getDiscountPrice } from "../../utils/getDiscountPrice";
@@ -18,9 +17,9 @@ const ProductCard = ({
 }) => {
   return (
     <>
-      <div className="group relative border border-transparent hover:border-white01 p-6 rounded-[10px] cursor-pointer w-[285px]">
-        <div className="w-full h-[214px] overflow-hidden rounded-[10px] mb-3">
-          <img src={image} alt="img" />
+      <div className="group relative border border-transparent hover:border-white01 p-6 rounded-[10px] cursor-pointer lg:w-[285px]">
+        <div className="w-full h-[214px]  rounded-[10px] mb-3 items-center ">
+          <img src={image} alt="img" className="w-full h-full object-cover" />
         </div>
         <div className="absolute top-[50%] left-[50%] translate-y-[-50%] -translate-x-2/4 invisible group-hover:visible transition-all ease-in duration-300 items-center">
           <div className="flex items-center gap-x-4">

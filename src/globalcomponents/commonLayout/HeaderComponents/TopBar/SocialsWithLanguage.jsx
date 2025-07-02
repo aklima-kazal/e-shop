@@ -51,30 +51,30 @@ const SocialsWithLanguage = () => {
   };
   return (
     <>
-      <div className="flex items-center justify-end gap-8 w-full">
+      <div className="flex items-center lg:justify-end gap-x-3 lg:gap-x-8 w-full  ">
         <div>
           <Select
             defaultValue={currencyOtions[0].value}
-            style={{ width: 100 }}
+            style={{ width: 70 }}
             onChange={() => {}}
             options={currencyOtions}
-            className="custom-select"
+            rootClassName="custom-select"
           />
         </div>
 
-        <div className="w-[1px] h-[32px] bg-white01"></div>
+        <div className="w-[1px] h-[32px] bg-white01  "></div>
         <div>
           <Select
             defaultValue={countryOtionsWithFlag[0].value}
-            style={{ width: 120 }}
+            style={{ width: 130 }}
             onChange={handleLanguageChange}
             options={countryOtionsWithFlag}
-            className="custom-select"
+            rootClassName="custom-select"
           />
         </div>
 
-        <div className="w-[1px] h-[32px] bg-white01"></div>
-        <div className="flex items-center gap-4">
+        <div className="w-[1px] h-[32px] bg-white01 hidden lg:block "></div>
+        <div className="lg:flex items-center gap-4 hidden ">
           <Link to="facebook.com">
             <FaFacebookF color="#303030" />
           </Link>
@@ -82,7 +82,7 @@ const SocialsWithLanguage = () => {
             <IoLogoTwitter color="#303030" />
           </Link>
           <Link to="instagram.com">
-            <FaInstagram color="#303030" />
+            <FaInstagram color="#303030" className="w-[20px]" />
           </Link>
         </div>
       </div>

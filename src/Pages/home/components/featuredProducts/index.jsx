@@ -9,21 +9,41 @@ import { featuredData } from "./featuredData";
 import { Navigation } from "swiper/modules";
 import PrevButton from "../../../../globalcomponents/PrevButton";
 import NextButton from "../../../../globalcomponents/NextButton";
+const breakpoints = {
+  320: {
+    slidesPerView: 1,
+  },
+  576: {
+    slidesPerView: 2,
+  },
+  768: {
+    slidesPerView: 2,
+  },
+  992: {
+    slidesPerView: 3,
+  },
+  1200: {
+    slidesPerView: 4,
+  },
+  1400: {
+    slidesPerView: 5,
+  },
+};
 const FeaturedProducts = () => {
   const { t } = useTranslation();
   return (
     <>
       <section className="mt-[80px] px-10">
         <Container>
-          <div className="relative ">
-            <div className="flex items-center justify-between mt-[80px] mb-10">
-              <h3 className="text-[36px] font-semibold text-black font-poppins ">
+          <div className="relative xl:w-[98%]">
+            <div className="flex items-center justify-between mb-10">
+              <h3 className="text-[24px] md:text-[36px] font-semibold text-black font-poppins ">
                 {t("Featured_Products")}
               </h3>
 
               <Link
                 to="/product"
-                className="flex items-center gap-x-2 font-bold font-montserrat text-[16px] text-orange group"
+                className="flex items-center gap-x-2 font-bold font-montserrat text-sm lg:text-[16px] text-orange group"
               >
                 {t("View_All")}
                 <span className="group-hover:translate-x-2 transition-transform duration-300">
@@ -41,6 +61,7 @@ const FeaturedProducts = () => {
             <Swiper
               spaceBetween={50}
               slidesPerView={5}
+              breakpoints={breakpoints}
               modules={[Navigation]}
               navigation={{
                 nextEl: ".swiper-button-next",

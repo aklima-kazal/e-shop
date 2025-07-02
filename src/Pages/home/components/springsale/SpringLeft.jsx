@@ -9,7 +9,7 @@ const SpringLeft = () => {
   return (
     <>
       <div>
-        <h3 className="text-[36px] font-bold text-black font-poppins">
+        <h3 className="text-[24px] md:text-[36px] font-bold text-black font-poppins">
           {t("Spring Sale")}
         </h3>
         <div className="mt-4">
@@ -18,7 +18,7 @@ const SpringLeft = () => {
             renderer={RenderCountDown}
           />
         </div>
-        <CommonButton className="!bg-orange !mt-[60px] !px-8 !h-12 !border-none rounded-[10px]">
+        <CommonButton className="!bg-orange !mb-[60px] !lg:mb-0 !mt-[60px] !px-8 !h-12 !border-none rounded-[10px]">
           <span className="font-bold font-montserrat text-lg text-white">
             {t("Shop Now")}
           </span>

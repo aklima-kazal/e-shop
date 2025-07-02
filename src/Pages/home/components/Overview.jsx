@@ -6,9 +6,9 @@ import overView2 from "../../../assets/Images/products/overview2.png";
 const Overview = () => {
   return (
     <>
-      <section className="mt-[80px] ">
+      <section className="mt-[60px] lg:mt-[80px] ">
         <Container>
-          <div className="grid grid-cols-[60%_40%] gap-x-5 px-10">
+          <div className="grid grid-cols-1 lg:grid-cols-[auto_auto] gap-y-5 lg:gap-x-5 px-10">
             <div>
               <img
                 src={overView1}

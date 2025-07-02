@@ -8,11 +8,11 @@ const SpringSale = () => {
     <>
       <section className="bg-white02 py-16 mt-20 px-10">
         <Container>
-          <div className="flex items-center justify-between ">
-            <div className="w-[35%]">
+          <div className="flex-cols xl:flex items-center md:justify-between ">
+            <div className="xl:w-[35%]">
               <SpringLeft />
             </div>
-            <div className="w-[55%] ">
+            <div className="xl:w-[55%] ">
               <SpringRight />
             </div>
           </div>

@@ -15,6 +15,13 @@
   --color-white02: #f4f4f4;
   --color-purple01: #283b82;
   --color-blue01: #469bdb;
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1400px;
+  --breakpoint-3xl: 1700px;
 }
 
 .custom-select .ant-select-selector {
@@ -22,6 +29,7 @@
   box-shadow: none !important;
   outline: none !important;
 }
+
 .custom-collapse {
   background-color: white !important;
   padding: 10px !important;
@@ -74,4 +82,32 @@
   font-size: 20px !important;
   font-weight: 600 !important;
   color: #303030 !important;
+}
+.custom_drawer .ant-drawer-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.custom_drawer .ant-drawer-close svg {
+  color: #ffffff !important;
+  height: 40px !important;
+  width: 40px !important;
+  border: 1px solid #ff624c !important;
+  border-radius: 50% !important;
+  padding: 10px !important;
+  background-color: #ff624c !important;
+}
+.custom_drawer .ant-drawer-close svg:hover {
+  color: #ff624c !important;
+  background-color: #ffffff !important;
+}
+@media (max-width: 575px) {
+  .custom-collapse .ant-collapse-header-text {
+    font-size: 15px !important;
+  }
+  .custom-collapse .ant-collapse-content-box {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+  }
 }

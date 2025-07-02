@@ -11,7 +11,7 @@ const BestSellerLeft = () => {
     <>
       <div className=" mt-[80px] mb-10">
         <div className="flex items-center justify-between mb-12">
-          <h3 className="text-[36px] font-semibold text-black font-poppins ">
+          <h3 className="text-[24px] md:text-[36px] font-semibold text-black font-poppins ">
             {t("Best Seller")}
           </h3>
 
@@ -25,7 +25,7 @@ const BestSellerLeft = () => {
             </span>
           </Link>
         </div>
-        <div className="grid grid-cols-3 gap-5 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 mt-10">
           {featuredData?.slice(0, 6).map((product) => (
             <ProductCard
               key={product.id}
