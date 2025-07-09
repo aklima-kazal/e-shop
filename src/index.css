@@ -11,6 +11,7 @@
   --color-red: #bd0034;
   --color-gray: #c4c4c4;
   --color-blue: #00579f;
+  --color-black01: #30303038;
   --color-white01: #cccccc;
   --color-white02: #f4f4f4;
   --color-purple01: #283b82;
@@ -110,4 +111,42 @@
     font-size: 14px !important;
     font-weight: 400 !important;
   }
+}
+.product-custom-collapse .ant-collapse-item {
+  border: none !important;
+  background-color: #f4f4f4 !important;
+}
+
+.product-custom-collapse .ant-collapse-item .ant-collapse-header {
+  border: none !important;
+  padding: 20px !important;
+  position: relative !important;
+}
+.product-custom-collapse .ant-collapse-item .ant-collapse-content {
+  background-color: #f4f4f4 !important;
+  border: none !important;
+  padding: 12px !important;
+}
+
+.product-custom-collapse
+  .ant-collapse-item
+  .ant-collapse-header
+  .ant-collapse-expand-icon {
+  position: absolute !important;
+  right: 20px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+.product-custom-collapse
+  .ant-collapse-item
+  .ant-collapse-header
+  .ant-collapse-expand-icon
+  svg {
+  height: 20px !important;
+  width: 20px !important;
+  color: #303030 !important;
+}
+
+.ant-slider .ant-slider-handle::after {
+  background-color: #ff624c !important;
 }
