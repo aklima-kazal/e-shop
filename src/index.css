@@ -116,7 +116,9 @@
   border: none !important;
   background-color: #f4f4f4 !important;
 }
-
+.product-custom-collapse.ant-collapse {
+  border: none !important;
+}
 .product-custom-collapse .ant-collapse-item .ant-collapse-header {
   border: none !important;
   padding: 20px !important;
@@ -147,6 +149,13 @@
   color: #303030 !important;
 }
 
-.ant-slider .ant-slider-handle::after {
+.price-custom-slider .ant-slider-handle::after {
   background-color: #ff624c !important;
+  height: 16px !important;
+  width: 16px !important;
+  border-radius: 50% !important;
+  outline: #ff624c !important;
+  box-shadow: none !important;
+  top: -3px !important;
+  left: -3px !important;
 }

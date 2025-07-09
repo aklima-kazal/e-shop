@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import Container from "../../../../Container";
 import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
 
-const AllCatagoryMenu = ({ isMenu, className, icons, Picons }) => {
+const AllCatagoryMenu = ({ isMenu, className, icons, content }) => {
   const { t } = useTranslation();
   return (
     <>

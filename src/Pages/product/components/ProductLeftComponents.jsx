@@ -6,7 +6,7 @@ import { Divider } from "antd";
 const ProductLeftComponents = () => {
   return (
     <>
-      <div className=" bg-white02 p-1 rounded-xl w-[80%]">
+      <div className=" bg-white02 p-1 rounded-xl w-[80%] h-fit">
         <Categories />
         <Divider />
         <Brands />

@@ -1,9 +1,14 @@
 import React from "react";
+import Showcaseheader from "./productShowcase/Showcaseheader";
+import Showcasebody from "./productShowcase/Showcasebody";
 
 const ProductRightComponents = () => {
   return (
     <>
-      <div>ProductRightComponent</div>
+      <div>
+        <Showcaseheader />
+        <Showcasebody />
+      </div>
     </>
   );
 };

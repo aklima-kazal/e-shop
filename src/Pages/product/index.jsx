@@ -7,14 +7,16 @@ import { Helmet } from "react-helmet-async";
 const Product = () => {
   return (
     <>
-      <div>
+      <div className="px-10">
         <Container>
           <Helmet>
             <title>Product</title>
           </Helmet>
-          <div className="grid grid-cols-[2fr_5fr] gap-x-4 mt-16">
+          <div className="grid grid-cols-[1.3fr_4fr] mt-16">
             <ProductLeftComponents />
-            <ProductRightComponents />
+            <div className="ml-[-40px] mx-3.5">
+              <ProductRightComponents />
+            </div>
           </div>
         </Container>
       </div>

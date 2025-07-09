@@ -38,7 +38,7 @@ function Price() {
                       defaultValue={priceRange}
                       value={priceRange}
                       onChange={(value) => setPriceRange(value)}
-                      rootClassName="product-custom-slider"
+                      rootClassName="price-custom-slider"
                     />
                   </div>
                 </div>
