@@ -6,7 +6,7 @@ const Subscribe = () => {
     <>
       <section className="mt-[8px] lg:mt-[8px] px-10">
         <div className="bg-linear-to-r from-white02 to-gray rounded-[25px] grid grid-cols-1 xl:grid-cols-[2fr_3fr] ">
-          <div className="py-6 lg:py-[114px] pl-8 px-6 xl:pl-[100px] ">
+          <div className="py-2 lg:py-[80px] pl-8 px-6 xl:pl-[100px] ">
             <SubscribeForm />
           </div>
           <div className="  xl:pl-[100px]  xl:block hidden">

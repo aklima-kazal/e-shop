@@ -69,11 +69,11 @@ const Brands = () => {
                         </li>
                       );
                     })}
-                  <div className="flex items-center justify-start underline gap-y-4">
+                  <div className="flex items-center justify-start  gap-y-4 hover:underline-offset">
                     {brandData && brandData.length > initialData && (
                       <Button
                         onClick={moreBrands}
-                        className=" mt-6 !text-base !font-bold !font-montserrat !hover:!text-orange !text-black !bg-transparent !border-none"
+                        className=" mt-6 !text-base !font-bold !font-montserrat !hover:!text-orange !text-black !bg-transparent !border-none "
                       >
                         More Brands
                       </Button>

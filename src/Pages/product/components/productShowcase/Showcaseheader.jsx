@@ -1,9 +1,15 @@
-import React from "react";
 import AllCatagoryMenu from "../../../../globalcomponents/commonLayout/HeaderComponents/menubar/AllCatagories";
 import { FaBars } from "react-icons/fa";
 import { IoGridOutline } from "react-icons/io5";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  setGridView,
+  setListView,
+} from "../../../../service/redux/feature/viewSlice";
 
 const Showcaseheader = () => {
+  const dispatch = useDispatch();
+  const viewMode = useSelector((state) => state.view.mode);
   return (
     <>
       <div>
@@ -36,10 +42,20 @@ const Showcaseheader = () => {
             <div className=" flex items-center lg:justify-end gap-x-2 lg:gap-x-4 w-0.5 h-8 bg-white01" />
           </div>
           <div className="flex items-center gap-x-4 ">
-            <div className="hover:text-orange cursor-pointer text-black01">
+            <div
+              className={`hover:text-orange cursor-pointer border border-white01 hover:border-orange p-1 rounded-[5px] ${
+                viewMode === "grid" ? "text-orange" : "text-black01"
+              }`}
+              onClick={() => dispatch(setGridView())}
+            >
               <IoGridOutline size={24} />
             </div>
-            <div className="hover:text-orange cursor-pointer text-black01">
+            <div
+              className={`hover:text-orange cursor-pointer border border-white01 hover:border-orange p-1 rounded-[5px] ${
+                viewMode === "list" ? "text-orange " : "text-black01"
+              }`}
+              onClick={() => dispatch(setListView())}
+            >
               <FaBars size={24} />
             </div>
           </div>

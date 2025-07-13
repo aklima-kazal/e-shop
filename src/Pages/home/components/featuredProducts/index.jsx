@@ -72,6 +72,7 @@ const FeaturedProducts = () => {
                 <SwiperSlide>
                   <ProductCard
                     key={product.id}
+                    id={product.id}
                     image={product.image}
                     discount={product.discount}
                     pCategory={product.pCategory}

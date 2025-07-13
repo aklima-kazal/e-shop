@@ -11,6 +11,7 @@ import Cheakout from "./Pages/checkout";
 import Blog from "./Pages/blog";
 import Contact from "./Pages/contact";
 import RootLayout from "./layouts/RootLayout";
+import SingleProducts from "./Pages/product/components/singleProducts";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -19,6 +20,7 @@ const App = () => {
         <Route element={<RootLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/product" element={<Product />} />
+          <Route path="/product/:name" element={<SingleProducts />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/cheakout" element={<Cheakout />} />
           <Route path="/blog" element={<Blog />} />

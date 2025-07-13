@@ -7,6 +7,7 @@ import { IoIosHeartEmpty } from "react-icons/io";
 import { IoShareSocialOutline } from "react-icons/io5";
 
 const ProductCard = ({
+  id,
   image,
   discount,
   pCategory,
@@ -15,6 +16,7 @@ const ProductCard = ({
   totalRatings,
   price,
 }) => {
+  const removeSpace = pName.replace(/\s/g, "");
   return (
     <>
       <div className="group relative border border-transparent hover:border-white01 p-6 rounded-[10px] cursor-pointer lg:w-[285px]">
@@ -59,16 +61,17 @@ const ProductCard = ({
               }
             >
               <Link
-                to="/product"
-                className="text-xl font-semibold text-black font-poppins truncate"
+                to={`/product/${id}`}
+                className="text-xl font-semibold text-black font-poppins "
               >
                 {pName}
               </Link>
             </Tooltip>
           ) : (
             <Link
-              to="/product"
-              className="text-xl font-semibold text-black font-poppins truncate group-hover:text-orange transition-all ease-in-out duration-300"
+              to={`/product/${id}`}
+              className="text-xl font-semibold text-black font-poppins 
+               group-hover:text-orange transition-all ease-in-out duration-300"
             >
               {pName}
             </Link>
