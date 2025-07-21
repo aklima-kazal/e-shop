@@ -1,5 +1,5 @@
-import ProductCarts from "./productCarts";
 import { useSelector } from "react-redux";
+import ProductCarts from "./productCarts";
 const CartBody = () => {
   const cartItems = useSelector((state) => state.cart.items);
   const subTotal = cartItems.reduce(
@@ -38,7 +38,7 @@ const CartBody = () => {
             Your Cart is Empty
           </div>
         ) : (
-          cartItems.map((cart) => (
+          cartItems.map((cart, id) => (
             <ProductCarts
               key={cart.id}
               subTotal={cart.subTotal}
