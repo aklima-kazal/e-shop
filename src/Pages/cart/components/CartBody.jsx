@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import ProductCarts from "./productCarts";
+import ProductCarts from "./ProductCarts";
 const CartBody = () => {
   const cartItems = useSelector((state) => state.cart.items);
   const subTotal = cartItems.reduce(
