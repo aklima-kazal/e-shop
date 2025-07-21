@@ -25,9 +25,12 @@ const ProductCard = ({
         </div>
         <div className="absolute top-[50%] left-[50%] translate-y-[-50%] -translate-x-2/4 invisible group-hover:visible transition-all ease-in duration-300 items-center">
           <div className="flex items-center gap-x-4">
-            <div className="w-[50px] h-[50px]  text-orange flex items-center border border-orange rounded-full bg-white p-3 justify-center hover:bg-orange hover:text-white">
+            <Link
+              to="/cart"
+              className="w-[50px] h-[50px]  text-orange flex items-center border border-orange rounded-full bg-white p-3 justify-center hover:bg-orange hover:text-white"
+            >
               <FaOpencart size={20} />
-            </div>
+            </Link>
             <div className="w-[50px] h-[50px]  text-orange flex items-center border border-orange rounded-full bg-white p-3 justify-center hover:bg-orange hover:text-white">
               <IoIosHeartEmpty size={20} />
             </div>

@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { featuredData } from "../../../home/components/featuredProducts/featuredData";
 import ProductCard from "../../../../globalcomponents/productCard";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import ProductCardList from "../../../../globalcomponents/ProductCardList";
+import CustomPagination from "../../../../globalcomponents/CustomPagination";
+import { setRange } from "../../../../service/redux/feature/paginationSlice";
 
 const Showcasebody = () => {
   const viewMode = useSelector((state) => state.view.mode);
+  const [page, setPage] = useState(1);
+  const pageSize = 10;
+  const StartIndex = (page - 1) * pageSize;
+  const EndIndex = StartIndex + pageSize;
+  const paginatedProducts = featuredData.slice(StartIndex, EndIndex);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(
+      setRange({
+        from: StartIndex + 1,
+        to: Math.min(EndIndex, featuredData.length),
+        total: featuredData.length,
+      })
+    );
+  }, [page, dispatch]);
   return (
     <>
       <div className="mt-4 ">
@@ -14,7 +31,7 @@ const Showcasebody = () => {
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 
            mx-auto xl: gap-y-5 xl:gap-x-14 mt-10 "
           >
-            {featuredData?.slice(0, 20)?.map((product) => (
+            {paginatedProducts?.map((product) => (
               <ProductCard
                 key={product.id}
                 id={product.id}
@@ -33,7 +50,7 @@ const Showcasebody = () => {
             className="
            mx-auto xl: gap-y-5 xl:gap-x-14 mt-10 "
           >
-            {featuredData?.slice(0, 20)?.map((product) => (
+            {featuredData?.map((product) => (
               <ProductCardList
                 key={product.id}
                 id={product.id}
@@ -46,6 +63,17 @@ const Showcasebody = () => {
                 price={product.price}
               />
             ))}
+          </div>
+        )}
+
+        {featuredData.length > pageSize && (
+          <div>
+            <CustomPagination
+              current={page}
+              total={featuredData.length}
+              onChange={setPage}
+              pageSize={pageSize}
+            />
           </div>
         )}
       </div>

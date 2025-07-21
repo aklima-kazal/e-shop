@@ -3,19 +3,19 @@ export const featuredData = [
   {
     id: 1,
     image: Productwatch,
-    brand: "Apple",
+    brand: "Fantac",
     weight: "200g",
     delivary: "2-3 business days",
     size: "XL",
     variant: ["Black", "White", "Blue", "Red"],
-    pCategory: "Watch",
-    pName: "Smart Watch",
+    pCategory: "Headphone",
+    pName: "Smart headphone",
     ratings: 5,
     totalRatings: 120,
     price: 500,
     discount: 10,
     decription:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam ",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
   },
   {
     id: 2,
@@ -25,65 +25,65 @@ export const featuredData = [
     delivary: "2-3 business days ",
     size: "XL",
     variant: ["Black", "White", "Blue", "Red"],
-    pCategory: "Watch",
-    pName: "Smart Watch",
+    pCategory: "Phone",
+    pName: "Smart Phone",
     ratings: 2.5,
     totalRatings: 90,
     price: 500,
     discount: 50,
-    description:
-      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam ",
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum ",
   },
   {
     id: 3,
     image: Productwatch,
-    brand: "Apple",
+    brand: "Oppo",
     weight: "200g",
     delivary: "2-3 business days ",
     size: "XL",
     variant: ["Black", "White", "Blue", "Red"],
-    pCategory: "Watch",
-    pName: "Smart Watch",
+    pCategory: "Phone",
+    pName: "Smart Phone",
     ratings: 4.5,
     totalRatings: 100,
     price: 500,
     discount: null,
-    description:
-      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam ",
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream ",
   },
   {
     id: 4,
     image: Productwatch,
-    brand: "Apple",
+    brand: "Ryzen",
     weight: "200g",
     delivary: "2-3 business days ",
     size: "XL",
     variant: ["Black", "White", "Blue", "Red"],
-    pCategory: "Watch",
-    pName: "Smart Watch",
+    pCategory: "CPU",
+    pName: "Ryzen 5 6670X",
     ratings: 0,
     totalRatings: 110,
     price: 400,
     discount: null,
-    description:
-      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam ",
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur ",
   },
   {
     id: 5,
     image: Productwatch,
-    brand: "Apple",
+    brand: "Microlab",
     weight: "200g",
     delivary: "2-3 business days ",
     size: "XL",
     variant: ["Black", "White", "Blue", "Red"],
-    pCategory: "Watch",
-    pName: "Smart Watch",
+    pCategory: "Speaker",
+    pName: "Smart Speaker",
     ratings: 4.0,
     totalRatings: 110,
     price: 350,
     discount: null,
-    description:
-      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam ",
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream ",
   },
   {
     id: 6,
@@ -93,14 +93,14 @@ export const featuredData = [
     delivary: "2-3 business days ",
     size: "XL",
     variant: ["Black", "White", "Blue", "Red"],
-    pCategory: "Watch",
+    pCategory: "Headphone",
     pName: "Smart Watch",
     ratings: 3.0,
     totalRatings: 110,
     price: 250,
     discount: 60,
-    description:
-      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam ",
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit",
   },
   {
     id: 7,
@@ -116,8 +116,8 @@ export const featuredData = [
     totalRatings: 110,
     price: 350,
     discount: null,
-    description:
-      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam ",
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
   },
   {
     id: 8,
@@ -133,8 +133,8 @@ export const featuredData = [
     totalRatings: 110,
     price: 300,
     discount: null,
-    description:
-      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam ",
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
   },
   {
     id: 9,
@@ -150,8 +150,8 @@ export const featuredData = [
     totalRatings: 110,
     price: 550,
     discount: 20,
-    description:
-      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam ",
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
   },
   {
     id: 10,
@@ -167,8 +167,8 @@ export const featuredData = [
     totalRatings: 110,
     price: 350,
     discount: null,
-    description:
-      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam ",
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
   },
   {
     id: 11,
@@ -184,8 +184,8 @@ export const featuredData = [
     totalRatings: 110,
     price: 350,
     discount: 10,
-    description:
-      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam ",
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
   },
   {
     id: 12,
@@ -201,8 +201,8 @@ export const featuredData = [
     totalRatings: 110,
     price: 350,
     discount: null,
-    description:
-      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam ",
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
   },
   {
     id: 13,
@@ -218,8 +218,8 @@ export const featuredData = [
     totalRatings: 110,
     price: 350,
     discount: null,
-    description:
-      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam ",
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
   },
   {
     id: 14,
@@ -235,8 +235,8 @@ export const featuredData = [
     totalRatings: 110,
     price: 350,
     discount: null,
-    description:
-      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam ",
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
   },
   {
     id: 15,
@@ -252,8 +252,8 @@ export const featuredData = [
     totalRatings: 110,
     price: 350,
     discount: null,
-    description:
-      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam ",
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
   },
   {
     id: 16,
@@ -269,8 +269,8 @@ export const featuredData = [
     totalRatings: 110,
     price: 350,
     discount: null,
-    description:
-      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam ",
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosamloream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
   },
   {
     id: 17,
@@ -286,8 +286,8 @@ export const featuredData = [
     totalRatings: 110,
     price: 350,
     discount: null,
-    description:
-      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam ",
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
   },
   {
     id: 18,
@@ -303,8 +303,8 @@ export const featuredData = [
     totalRatings: 110,
     price: 350,
     discount: null,
-    description:
-      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam ",
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
   },
   {
     id: 19,
@@ -320,8 +320,8 @@ export const featuredData = [
     totalRatings: 110,
     price: 350,
     discount: null,
-    description:
-      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam ",
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
   },
   {
     id: 20,
@@ -337,8 +337,8 @@ export const featuredData = [
     totalRatings: 110,
     price: 350,
     discount: null,
-    description:
-      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam ",
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
   },
   {
     id: 21,
@@ -354,7 +354,160 @@ export const featuredData = [
     totalRatings: 110,
     price: 350,
     discount: null,
-    description:
-      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam ",
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
+  },
+  {
+    id: 22,
+    image: Productwatch,
+    brand: "Apple",
+    weight: "200g",
+    delivary: "2-3 business days ",
+    size: "XL",
+    variant: ["Black", "White", "Blue", "Red"],
+    pCategory: "Watch",
+    pName: "Smart Watch",
+    ratings: 4.0,
+    totalRatings: 110,
+    price: 350,
+    discount: null,
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
+  },
+  {
+    id: 23,
+    image: Productwatch,
+    brand: "Apple",
+    weight: "200g",
+    delivary: "2-3 business days ",
+    size: "XL",
+    variant: ["Black", "White", "Blue", "Red"],
+    pCategory: "Watch",
+    pName: "Smart Watch",
+    ratings: 4.0,
+    totalRatings: 110,
+    price: 350,
+    discount: null,
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
+  },
+  {
+    id: 24,
+    image: Productwatch,
+    brand: "Apple",
+    weight: "200g",
+    delivary: "2-3 business days ",
+    size: "XL",
+    variant: ["Black", "White", "Blue", "Red"],
+    pCategory: "Watch",
+    pName: "Smart Watch",
+    ratings: 4.0,
+    totalRatings: 110,
+    price: 350,
+    discount: null,
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
+  },
+  {
+    id: 25,
+    image: Productwatch,
+    brand: "Apple",
+    weight: "200g",
+    delivary: "2-3 business days ",
+    size: "XL",
+    variant: ["Black", "White", "Blue", "Red"],
+    pCategory: "Watch",
+    pName: "Smart Watch",
+    ratings: 4.0,
+    totalRatings: 110,
+    price: 350,
+    discount: null,
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
+  },
+  {
+    id: 26,
+    image: Productwatch,
+    brand: "Apple",
+    weight: "200g",
+    delivary: "2-3 business days ",
+    size: "XL",
+    variant: ["Black", "White", "Blue", "Red"],
+    pCategory: "Watch",
+    pName: "Smart Watch",
+    ratings: 4.0,
+    totalRatings: 110,
+    price: 350,
+    discount: null,
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
+  },
+  {
+    id: 27,
+    image: Productwatch,
+    brand: "Microlab",
+    weight: "200g",
+    delivary: "2-3 business days ",
+    size: "XL",
+    variant: ["Black", "White", "Blue", "Red"],
+    pCategory: "Speaker",
+    pName: "Smart speaker",
+    ratings: 4.0,
+    totalRatings: 110,
+    price: 350,
+    discount: null,
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
+  },
+  {
+    id: 28,
+    image: Productwatch,
+    brand: "Zotac",
+    weight: "200g",
+    delivary: "2-3 business days ",
+    size: "XL",
+    variant: ["Black", "White", "Blue", "Red"],
+    pCategory: "Graphics Card",
+    pName: "Smart Watch",
+    ratings: 4.0,
+    totalRatings: 110,
+    price: 350,
+    discount: null,
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
+  },
+  {
+    id: 29,
+    image: Productwatch,
+    brand: "Nvidia",
+    weight: "200g",
+    delivary: "2-3 business days ",
+    size: "XL",
+    variant: ["Black", "White", "Blue", "Red"],
+    pCategory: "Graphics Card",
+    pName: "Smart Watch",
+    ratings: 4.0,
+    totalRatings: 110,
+    price: 350,
+    discount: null,
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
+  },
+  {
+    id: 30,
+    image: Productwatch,
+    brand: "Blackberry",
+    weight: "200g",
+    delivary: "2-3 business days ",
+    size: "XL",
+    variant: ["Black", "White", "Blue", "Red"],
+    pCategory: "Phone",
+    pName: "Smart Phone",
+    ratings: 4.0,
+    totalRatings: 110,
+    price: 350,
+    discount: null,
+    decription:
+      "loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam loream Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam",
   },
 ];

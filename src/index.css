@@ -14,6 +14,7 @@
   --color-black01: #30303038;
   --color-white01: #cccccc;
   --color-white02: #f4f4f4;
+  --color-white03: #d9d9d9;
   --color-purple01: #283b82;
   --color-blue01: #469bdb;
   --breakpoint-xs: 320px;
@@ -158,4 +159,8 @@
   box-shadow: none !important;
   top: -3px !important;
   left: -3px !important;
+}
+.ant-pagination-item {
+  border: none !important;
+  cursor: pointer !important;
 }

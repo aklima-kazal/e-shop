@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../../../../globalcomponents/Container";
 import { getStars } from "../../../../utils/generateRating";
 import { getDiscountPrice } from "../../../../utils/getDiscountPrice";
+import ReactImageMagnify from "react-image-magnify";
 
 const ProductDetails = ({
   image,
@@ -19,9 +20,29 @@ const ProductDetails = ({
   return (
     <>
       <Container>
-        <div className="grid grid-cols-[1.4fr_1fr] gap-x-10 px-10">
-          <div className="border border-gray rounded-3xl ">
-            <img src={image} alt="" className=" mx-auto " />
+        <div className="grid grid-cols-[1.4fr_1fr] gap-x-10 px-20">
+          <div className="border border-gray rounded-3xl relative ">
+            <ReactImageMagnify
+              {...{
+                smallImage: {
+                  alt: "Wristwatch by Ted Baker London",
+                  isFluidWidth: true,
+                  src: image,
+                  width: 150,
+                  height: 150,
+                },
+                largeImage: {
+                  src: image,
+                  width: 1200,
+                  height: 1800,
+                },
+                enlargedImageContainerClassName: {
+                  zindex: 1000,
+                },
+                isHintEnabled: true,
+                shouldHideHintAfterFirstActivation: true,
+              }}
+            />
           </div>
           <div>
             <div className="flex items-center gap-x-2">

@@ -62,9 +62,12 @@ const ProductCardList = ({
           </div>
           <div className=" translate-y-[30%]  ">
             <div className="flex items-center gap-x-4">
-              <div className="w-[40px] h-[40px] text-orange flex items-center border border-orange rounded-full bg-white p-3 justify-center hover:bg-orange hover:text-white cursor-pointer">
+              <Link
+                to="/cart"
+                className="w-[40px] h-[40px] text-orange flex items-center border border-orange rounded-full bg-white p-3 justify-center hover:bg-orange hover:text-white cursor-pointer"
+              >
                 <FaOpencart size={20} />
-              </div>
+              </Link>
               <div className="w-[40px] h-[40px] text-orange flex items-center border border-orange rounded-full bg-white p-3 justify-center hover:bg-orange hover:text-white cursor-pointer">
                 <IoIosHeartEmpty size={20} />
               </div>

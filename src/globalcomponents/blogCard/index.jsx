@@ -1,5 +1,5 @@
-import React from "react";
 import { PiClockFill } from "react-icons/pi";
+import Blog from "../../Pages/blog";
 
 const BlogCard = ({ pathname, ...props }) => {
   const { image, title, catagory, date } = props;
