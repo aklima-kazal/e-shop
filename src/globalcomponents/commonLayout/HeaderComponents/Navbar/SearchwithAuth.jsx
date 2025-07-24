@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { IoIosSearch } from "react-icons/io";
 import { FaOpencart } from "react-icons/fa6";
 import { AiOutlineUser } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const SearchwithAuth = () => {
   const { t } = useTranslation();
@@ -16,7 +17,7 @@ const SearchwithAuth = () => {
           />
           <IoIosSearch size={25} />
         </div>
-        <div className="flex items-center gap-x-4">
+        <Link to="/cart" className="flex items-center gap-x-4 cursor-pointer">
           <div className="relative ">
             <FaOpencart size={28} />
             <span className="absolute bg-orange w-[6px] h-[6px] rounded-full  top-[-4px] right-0"></span>
@@ -29,7 +30,7 @@ const SearchwithAuth = () => {
               $ 150,00
             </span>
           </div>
-        </div>
+        </Link>
         <div className="w-[1px] h-[32px] bg-white01"></div>
         <div>
           <div className="flex items-center gap-x-4">

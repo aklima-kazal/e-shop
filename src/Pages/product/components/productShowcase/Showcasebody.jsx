@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { featuredData } from "../../../home/components/featuredProducts/featuredData";
 import ProductCard from "../../../../globalcomponents/productCard";
 import { useDispatch, useSelector } from "react-redux";
@@ -46,10 +46,7 @@ const Showcasebody = () => {
             ))}
           </div>
         ) : (
-          <div
-            className="
-           mx-auto xl: gap-y-5 xl:gap-x-14 mt-10 "
-          >
+          <div className="mx-auto xl: gap-y-5 xl:gap-x-14 mt-10 ">
             {featuredData?.map((product) => (
               <ProductCardList
                 key={product.id}

@@ -34,8 +34,8 @@ const CartBody = () => {
           </div>
         </div>
         {cartItems.length === 0 ? (
-          <div className="text-center mt-12 text-[16px] font-montserrat font-semibold text-black">
-            Your Cart is Empty
+          <div className="text-center mt-12 text-[20px] font-montserrat font-semibold text-orange">
+            Your Cart is Empty!
           </div>
         ) : (
           cartItems.map((cart, id) => (
