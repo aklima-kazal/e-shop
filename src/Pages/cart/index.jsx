@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import Container from "../../globalcomponents/Container";
 import CartBody from "./components/CartBody";
+import CartSupport from "./components/CartSupport";
 
 const Cart = () => {
   const { pathname } = useLocation();
@@ -28,6 +29,7 @@ const Cart = () => {
           <div>
             <CartBody />
           </div>
+          <CartSupport />
         </div>
       </Container>
     </>

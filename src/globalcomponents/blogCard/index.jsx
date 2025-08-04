@@ -2,9 +2,10 @@ import { PiClockFill } from "react-icons/pi";
 import { RiUserFill } from "react-icons/ri";
 
 import Blog from "../../Pages/blog";
+import { Link } from "react-router-dom";
 
 const BlogCard = ({ pathname, ...props }) => {
-  const { image, title, catagory, date, postedBy } = props;
+  const { image, title, catagory, date, postedBy, id } = props;
   const isHomePage = pathname === "/";
   const HomePageCard = () =>
     isHomePage && (
@@ -18,9 +19,12 @@ const BlogCard = ({ pathname, ...props }) => {
             />
           </div>
           <div className="mt-8">
-            <h4 className="text-[20px] lg:text-[24px] font-semibold text-black font-poppins ">
+            <Link
+              to={`/blog/${id}`}
+              className="text-[20px] lg:text-[24px] font-semibold text-black font-poppins "
+            >
               {title}
-            </h4>
+            </Link>
             <div className="flex items-center justify-between mt-8">
               <div className="py-1 px-3 bg-orange rounded-[10px]">
                 <span className="text-[16px] font-bold text-white">
@@ -53,9 +57,12 @@ const BlogCard = ({ pathname, ...props }) => {
             />
           </div>
           <div className="mt-8">
-            <h4 className="text-[20px] lg:text-[24px] font-semibold text-black font-poppins ">
+            <Link
+              to={`/blog/${id}`}
+              className="text-[20px] lg:text-[24px] font-semibold text-black font-poppins "
+            >
               {title}
-            </h4>
+            </Link>
             <div className="flex items-center justify-between mt-8">
               <div className="flex items-center gap-x-2">
                 <RiUserFill size={20} color="#303030" />

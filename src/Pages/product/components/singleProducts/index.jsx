@@ -77,6 +77,7 @@ const SingleProducts = () => {
           <div className="mt-[48px]">
             <ProductDetails
               image={image}
+              id={id}
               ratings={ratings}
               totalRatings={totalRatings}
               pName={pName}

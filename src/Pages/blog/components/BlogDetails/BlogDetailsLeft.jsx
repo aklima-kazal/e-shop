@@ -1,11 +1,9 @@
 import { useTranslation } from "react-i18next";
 import { IoIosSearch } from "react-icons/io";
-import { BlogData } from "./BlogData";
-import { useLocation } from "react-router-dom";
+import { BlogData } from "../BlogData";
 
-const LeftBlog = () => {
+const BlogDetailsLeft = () => {
   const { t } = useTranslation();
-
   return (
     <>
       <div className="w-[80%]">
@@ -72,4 +70,4 @@ const LeftBlog = () => {
   );
 };
 
-export default LeftBlog;
+export default BlogDetailsLeft;

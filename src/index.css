@@ -164,3 +164,14 @@
   border: none !important;
   cursor: pointer !important;
 }
+.custom-form .ant-form-item-row {
+  flex-direction: column !important;
+}
+.custom-form .ant-form-item-label {
+  text-align: left !important;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #303030 !important;
+  margin-top: 20px !important;
+}

@@ -51,7 +51,7 @@ export const TechTalksData = [
   {
     id: 7,
     image: blogImage,
-    title: "Our Category Choices for Top 10 Tech Gadgets in 2023",
+    title: "Everything You Need to Know About Laptop X123 iCo 2023",
     catagory: "Guide",
     postedBy: "badshah",
     date: "11/03/2025",
@@ -59,7 +59,7 @@ export const TechTalksData = [
   {
     id: 8,
     image: blogImage,
-    title: "Our Category Choices for Top 10 Tech Gadgets in 2023",
+    title: "The Beginner Guide to Tech & PC Shopping",
     catagory: "Guide",
     postedBy: "calvin",
     date: "07/01/2025",
@@ -67,7 +67,7 @@ export const TechTalksData = [
   {
     id: 9,
     image: blogImage,
-    title: "Our Category Choices for Top 10 Tech Gadgets in 2023",
+    title: "The Best Smartwatches of 2023: Our Top Picks of Today",
     catagory: "Guide",
     postedBy: "talha",
     date: "16/02/2025",
@@ -83,7 +83,7 @@ export const TechTalksData = [
   {
     id: 11,
     image: blogImage,
-    title: "Our Category Choices for Top 10 Tech Gadgets in 2023",
+    title: "How to Choose the Right Fitness Tracker for Your Lifestyle",
     catagory: "Guide",
     postedBy: "labib",
     date: "01/01/2025",
@@ -91,7 +91,7 @@ export const TechTalksData = [
   {
     id: 12,
     image: blogImage,
-    title: "Our Category Choices for Top 10 Tech Gadgets in 2023",
+    title: "The Best Smartwatches of 2023: Our Top Picks of Today",
     catagory: "Guide",
     postedBy: "orko",
     date: "22/01/2025",
@@ -99,7 +99,7 @@ export const TechTalksData = [
   {
     id: 13,
     image: blogImage,
-    title: "Our Category Choices for Top 10 Tech Gadgets in 2023",
+    title: "Learning about The Future of Smart Office Technology",
     catagory: "Guide",
     postedBy: "qasim",
     date: "03/01/2025",
@@ -107,7 +107,7 @@ export const TechTalksData = [
   {
     id: 14,
     image: blogImage,
-    title: "Our Category Choices for Top 10 Tech Gadgets in 2023",
+    title: "How to Choose the Right Gaming Gadget for Your Needs",
     catagory: "Guide",
     postedBy: "khalid",
     date: "14/02/2025",
@@ -219,7 +219,7 @@ export const TechTalksData = [
   {
     id: 28,
     image: blogImage,
-    title: "Our Category Choices for Top 10 Tech Gadgets in 2023",
+    title: "Everything You Need to Know About Laptop X123 iCo 2023",
     catagory: "Guide",
     postedBy: "rahul",
     date: "01/01/2025",
@@ -235,7 +235,7 @@ export const TechTalksData = [
   {
     id: 30,
     image: blogImage,
-    title: "Our Category Choices for Top 10 Tech Gadgets in 2023",
+    title: "Top 10 Best-Selling Products of the Month: Tablet Edition",
     catagory: "Guide",
     postedBy: "niama",
     date: "01/01/2025",
@@ -243,7 +243,7 @@ export const TechTalksData = [
   {
     id: 31,
     image: blogImage,
-    title: "Our Category Choices for Top 10 Tech Gadgets in 2023",
+    title: "How to Choose the Right Gaming Gadget for Your Needs",
     catagory: "Guide",
     postedBy: "niama",
     date: "01/01/2025",

@@ -2,8 +2,16 @@ import React from "react";
 import SubscribeImg from "../../../assets/Images/subscribeimg.png";
 import { FaMinus, FaPlus } from "react-icons/fa6";
 import { FiTrash2 } from "react-icons/fi";
+import { useDispatch } from "react-redux";
+import { updateQty } from "../../../service/redux/feature/cartSlice";
 
-const ProductCarts = ({ pCategory, pName, subTotal, variant, price, qty }) => {
+const ProductCarts = ({ pCategory, pName, price, qty, id, subTotal }) => {
+  const dispatch = useDispatch();
+  const handleQuentity = (id, newQty) => {
+    if (newQty >= 1) {
+      dispatch(updateQty({ id, qty: newQty }));
+    }
+  };
   return (
     <>
       <div className="mt-4 px-[56px] py-[32px] border border-transparent hover:border hover:border-white01 transition-all ease-in duration-300 rounded-lg relative group">
@@ -35,26 +43,34 @@ const ProductCarts = ({ pCategory, pName, subTotal, variant, price, qty }) => {
           </div>
 
           <div className="flex items-center gap-x-4">
-            <button className=" hover:bg-white02 cursor-pointer p-4 rounded-full ">
+            <button
+              onClick={() => handleQuentity(id, qty - 1)}
+              className=" hover:bg-white02 cursor-pointer p-4 rounded-full "
+            >
               <FaMinus />
             </button>
             <div className="text-black font-poppins font-semibold text-4xl">
               {qty}
             </div>
-            <button className=" hover:bg-white02 cursor-pointer p-4 rounded-full">
+            <button
+              onClick={() => handleQuentity(id, qty + 1)}
+              className=" hover:bg-white02 cursor-pointer p-4 rounded-full"
+            >
               <FaPlus />
             </button>
           </div>
-          <div>${subTotal}</div>
+
           <div>
-            <h6 className="font-semibold font-poppins text-xl text-black">$</h6>
+            <h6 className="font-semibold font-poppins text-xl text-black">
+              ${(qty * price).toFixed(2)}
+            </h6>
           </div>
-        </div>
-        <div
-          role="button"
-          className="absolute top-[50%] right-[50px] translate-y-[-50%] bg-orange rounded-full cursor-pointer p-4 opacity-0 group-hover:opacity-100 transition-all ease-in duration-300 flex items-center justify-center"
-        >
-          <FiTrash2 size={25} color="white" />
+          <div
+            role="button"
+            className="absolute top-[50%] right-[50px] translate-y-[-50%] bg-orange rounded-full cursor-pointer p-4 opacity-0 group-hover:opacity-100 transition-all ease-in duration-300 flex items-center justify-center"
+          >
+            <FiTrash2 size={25} color="white" />
+          </div>
         </div>
       </div>
     </>

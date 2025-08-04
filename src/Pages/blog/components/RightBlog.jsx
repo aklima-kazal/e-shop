@@ -34,7 +34,12 @@ const RightBlog = () => {
       <section className="px-10 ">
         <div className="grid grid-cols-2 gap-y-10 gap-x-6">
           {paginatedProducts?.map((blog) => (
-            <BlogCard key={blog.id} pathname={pathname} {...blog} />
+            <BlogCard
+              key={blog.id}
+              id={blog.id}
+              pathname={pathname}
+              {...blog}
+            />
           ))}
         </div>
         {TechTalksData?.length > pageSize && (

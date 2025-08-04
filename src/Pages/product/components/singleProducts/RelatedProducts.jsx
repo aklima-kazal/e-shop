@@ -10,7 +10,7 @@ const RelatedProducts = ({ relatedProducts }) => {
     <>
       <div className="flex items-center justify-between mb-10">
         <h3 className="text-[24px] md:text-[36px] font-semibold text-black font-poppins ">
-          {t("Featured_Products")}
+          {t("Related_Products")}
         </h3>
 
         <Link
