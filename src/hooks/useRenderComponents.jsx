@@ -4,7 +4,7 @@ import Cart from "../Pages/Profile/components/Cart";
 import Order from "../Pages/Profile/components/Order";
 import Wallet from "../Pages/Profile/components/wallet";
 
-export const UseRenderComponents = (state) => {
+export const useRenderComponent = (state) => {
   switch (state) {
     case 1:
       return <Order />;

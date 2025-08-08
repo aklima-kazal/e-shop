@@ -1,8 +1,7 @@
-import React from "react";
-import { UseRenderComponents } from "../../../hooks/UseRenderComponents";
+import { useRenderComponent } from "../../../hooks/useRenderComponent";
 
 const RightBar = ({ options }) => {
-  const renderComponents = UseRenderComponents(options);
+  const renderComponent = useRenderComponent(options);
   return (
     <>
       <div>
@@ -24,7 +23,7 @@ const RightBar = ({ options }) => {
             </p>
           </div>
         </div>
-        <div className="mt-10">{renderComponents}</div>
+        <div className="mt-10">{renderComponent}</div>
       </div>
     </>
   );
