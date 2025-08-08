@@ -24,7 +24,9 @@ const Cart = () => {
             </span>
           </div>
           <div className="mt-12">
-            <h4 className="font-bold font-poppins text-[56px]">Your Cart</h4>
+            <h4 className="font-bold font-poppins text-[40px] lg:text-[56px] mb-4">
+              Your Cart
+            </h4>
           </div>
           <div>
             <CartBody />

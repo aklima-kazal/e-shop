@@ -6,7 +6,7 @@ const BlogDetailsLeft = () => {
   const { t } = useTranslation();
   return (
     <>
-      <div className="w-[80%]">
+      <div className="w-[90%] ">
         <div className="bg-orange p-6 rounded-[10px] items-center">
           <h3 className="font-semibold font-poppins text-2xl text-white mb-4">
             Blog Search

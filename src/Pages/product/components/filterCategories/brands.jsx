@@ -19,7 +19,7 @@ const Brands = () => {
             {
               key: "1",
               label: (
-                <h4 className="text-black font-montserrat font-bold text-xl ">
+                <h4 className="text-black font-montserrat font-bold text-base lg:text-xl ">
                   Brands
                 </h4>
               ),
@@ -69,11 +69,11 @@ const Brands = () => {
                         </li>
                       );
                     })}
-                  <div className="flex items-center justify-start  gap-y-4 hover:underline-offset">
+                  <div className="flex items-center justify-start  gap-y-4">
                     {brandData && brandData.length > initialData && (
                       <Button
                         onClick={moreBrands}
-                        className=" mt-6 !text-base !font-bold !font-montserrat !hover:!text-orange !text-black !bg-transparent !border-none "
+                        className=" mt-6 !text-base !font-bold !font-montserrat underline hover:!text-orange !text-black !bg-transparent !border-none "
                       >
                         More Brands
                       </Button>

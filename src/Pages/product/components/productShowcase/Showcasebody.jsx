@@ -28,8 +28,8 @@ const Showcasebody = () => {
       <div className="mt-4 ">
         {viewMode == "grid" ? (
           <div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 
-           mx-auto xl: gap-y-5 xl:gap-x-14 mt-10 "
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 3xl:grid-cols-4 
+          mx-[30px] xl:mx-[0px] 2xl:mx-auto gap-y-5 xl:gap-x-6 2xl:gap-x-14 mt-10 "
           >
             {paginatedProducts?.map((product) => (
               <ProductCard
@@ -46,8 +46,8 @@ const Showcasebody = () => {
             ))}
           </div>
         ) : (
-          <div className="mx-auto xl: gap-y-5 xl:gap-x-14 mt-10 ">
-            {featuredData?.map((product) => (
+          <div className="mx-[20px] xl:mx-auto  xl:gap-x-14 mt-10 ">
+            {paginatedProducts?.map((product) => (
               <ProductCardList
                 key={product.id}
                 id={product.id}
@@ -62,18 +62,17 @@ const Showcasebody = () => {
             ))}
           </div>
         )}
-
-        {featuredData.length > pageSize && (
-          <div>
-            <CustomPagination
-              current={page}
-              total={featuredData.length}
-              onChange={setPage}
-              pageSize={pageSize}
-            />
-          </div>
-        )}
       </div>
+      {featuredData.length > pageSize && (
+        <div>
+          <CustomPagination
+            current={page}
+            total={featuredData.length}
+            onChange={setPage}
+            pageSize={pageSize}
+          />
+        </div>
+      )}
     </>
   );
 };

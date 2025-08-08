@@ -7,7 +7,7 @@ const ProductDescription = ({ decription }) => {
         <h5 className="font-semibold font-poppins text-2xl text-black mb-6">
           Description
         </h5>
-        <p className="font-normal font-montserrat text-xl text-black mb-8">
+        <p className="font-normal font-montserrat text-[18px] lg:text-xl text-black mb-8">
           {decription}
         </p>
       </div>

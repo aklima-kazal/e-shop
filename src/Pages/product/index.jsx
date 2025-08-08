@@ -13,9 +13,9 @@ const Product = () => {
           <Helmet>
             <title>Product</title>
           </Helmet>
-          <div className="grid grid-cols-[1.3fr_4fr] mt-16">
+          <div className="xl:grid xl:grid-cols-[1.8fr_4fr] mt-16 ">
             <ProductLeftComponents />
-            <div className="ml-[-40px] mx-3.5">
+            <div className=" ml-[-40px] mx-3.5">
               <ProductRightComponents />
             </div>
           </div>

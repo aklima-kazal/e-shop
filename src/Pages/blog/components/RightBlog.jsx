@@ -31,8 +31,8 @@ const RightBlog = () => {
 
   return (
     <>
-      <section className="px-10 ">
-        <div className="grid grid-cols-2 gap-y-10 gap-x-6">
+      <section className=" lg:px-10 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-10 gap-x-6">
           {paginatedProducts?.map((blog) => (
             <BlogCard
               key={blog.id}

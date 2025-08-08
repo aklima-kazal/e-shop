@@ -27,38 +27,38 @@ const Footer = () => {
                 <ul>
                   <li className="flex items-center gap-x-4 mb-3">
                     <HiPhone size={20} color="#303030" />
-                    <span className="font-normal text-base text-black font-montserrat">
+                    <span className="font-normal text-sm lg:text-base text-black font-montserrat">
                       +1 (555) 123-4567
                     </span>
                   </li>
                   <li className="flex items-center gap-x-4 mb-3">
                     <IoIosMail size={20} color="#303030" />
-                    <span className="font-normal text-base text-black font-montserrat">
+                    <span className="font-normal text-sm lg:text-base text-black font-montserrat">
                       information@eshop.com
                     </span>
                   </li>
                   <li className="flex items-center gap-x-4">
                     <ImLocation size={20} color="#303030 " />
-                    <span className="font-normal text-base text-black font-montserrat">
+                    <span className="font-normal text-sm lg:text-base text-black font-montserrat">
                       123 Main Street, Suite 105, Anytown USA
                     </span>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="grid grid-cols-2 lg:grid-cols-4 mt-4 lg:mt-0">
+            <div className="grid grid-cols-2 xl:grid-cols-4 mt-4 lg:mt-0 gap-x-6">
               {FooterData?.map((item, index) => {
                 const linkList = item.linkTitle;
                 return (
                   <div key={index}>
-                    <h4 className="text-[20px] font-semibold text-black font-poppins">
+                    <h4 className="text-[18px] lg:text-[20px] font-semibold text-black font-poppins">
                       {t(item.title)}
                     </h4>
                     {linkList?.map((data) => {
                       return (
                         <div key={data.linkTopic} className="mt-4">
                           <ul>
-                            <li className="text-[16px] font-montserrat font-normal text-black hover:text-orange transition-all ease-in duration-300">
+                            <li className="text-[14px] lg:text-[16px] font-montserrat font-normal text-black hover:text-orange transition-all ease-in duration-300">
                               <Link to={data.to}>{data.linkTopic}</Link>
                             </li>
                           </ul>
@@ -69,28 +69,28 @@ const Footer = () => {
                 );
               })}
 
-              <div className="mt-4 lg:mt-0">
-                <h4 className="text-[20px] font-semibold text-black font-poppins">
+              <div className="mt-6 xl:mt-0">
+                <h4 className=" text-[18px] lg:text-[20px] font-semibold text-black font-poppins">
                   {t("Payments")}
                 </h4>
-                <div className="flex gap-x-2 xl:gap-x-4 mt-6">
+                <div className="flex flex-wrap gap-y-4 gap-x-4 mt-6">
                   <img src={visa} alt="visa" />
                   <img src={masterCard} alt="masterCard" />
                   <img src={Apple} alt="Apple" />
                   <img src={Paypal} alt="Paypal" />
                 </div>
                 <div className="mt-[73px]">
-                  <h4 className="text-[20px] font-semibold text-black font-poppins">
+                  <h4 className="text-[18px] lg:text-[20px] font-semibold text-black font-poppins">
                     Follow Us
                   </h4>
                   <ul>
-                    <li className="text-[16px] font-montserrat font-normal text-black hover:text-orange transition-all ease-in duration-300 mt-6">
+                    <li className="text-[14px] lg:text-[16px] font-montserrat font-normal text-black hover:text-orange transition-all ease-in duration-300 mt-4">
                       <Link to="">Twitter</Link>
                     </li>
-                    <li className="text-[16px] font-montserrat font-normal text-black hover:text-orange transition-all ease-in duration-300 mt-6">
+                    <li className="text-[14px] lg:text-[16px] font-montserrat font-normal text-black hover:text-orange transition-all ease-in duration-300 mt-4">
                       <Link to="">Instagram</Link>
                     </li>
-                    <li className="text-[16px] font-montserrat font-normal text-black hover:text-orange transition-all ease-in duration-300 mt-6">
+                    <li className="text-[14px] lg:text-[16px] font-montserrat font-normal text-black hover:text-orange transition-all ease-in duration-300 mt-4">
                       <Link to="">Facebook</Link>
                     </li>
                   </ul>

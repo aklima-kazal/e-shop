@@ -13,7 +13,7 @@ function Price() {
             {
               key: "1",
               label: (
-                <h4 className="text-[20px] font-bold font-montserrat text-black ">
+                <h4 className="text-base lg:text-[20px] font-bold font-montserrat text-black ">
                   Price
                 </h4>
               ),

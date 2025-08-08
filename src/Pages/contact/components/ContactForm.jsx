@@ -13,15 +13,15 @@ const ContactForm = () => {
 
   return (
     <div>
-      <h2 className="mb-4 text-4xl font-semibold font-poppins text-black">
+      <h2 className="mb-4 text-2xl lg:text-4xl font-semibold font-poppins text-black">
         Contact Us
       </h2>
-      <p className="mb-4 text-xl font-normal font-montserrat text-black">
+      <p className="mb-4 text-[18px] lg:text-xl font-normal font-montserrat text-black">
         Have any questions for us? Don’t hesitate to contact us.
       </p>
       <form onSubmit={handleSubmit}>
         <div>
-          <label className="block mb-2 text-xl font-bold font-montserrat text-black">
+          <label className="block mb-2 text-[18px] lg:text-xl font-bold font-montserrat text-black">
             Name
           </label>
           <input
@@ -41,7 +41,7 @@ const ContactForm = () => {
         <div className="grid grid-cols-2 gap-x-4 mt-8">
           <div>
             {" "}
-            <label className="block mb-2 text-xl font-bold font-montserrat text-black">
+            <label className="block mb-2 text-[18px] lg:text-xl font-bold font-montserrat text-black">
               Phone Number
             </label>
             <input
@@ -60,7 +60,7 @@ const ContactForm = () => {
           </div>
           <div>
             {" "}
-            <label className="block mb-2 text-xl font-bold font-montserrat text-black">
+            <label className="block mb-2 text-[18px] lg:text-xl font-bold font-montserrat text-black">
               Email Address
             </label>
             <input
@@ -79,7 +79,7 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="mt-8">
-          <label className="block mb-2 text-xl font-bold font-montserrat text-black mt-8">
+          <label className="block mb-2 text-[18px] lg:text-xl font-bold font-montserrat text-black mt-8">
             Message
           </label>
           <textarea

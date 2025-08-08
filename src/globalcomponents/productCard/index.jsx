@@ -19,35 +19,35 @@ const ProductCard = ({
   const removeSpace = pName.replace(/\s/g, "");
   return (
     <>
-      <div className="group relative border border-transparent hover:border-white01 p-6 rounded-[10px] cursor-pointer lg:w-[285px]">
-        <div className="w-full h-[214px]  rounded-[10px] mb-3 items-center ">
-          <img src={image} alt="img" className="w-full h-full object-cover" />
+      <div className="group relative border border-transparent hover:border-white01 p-8 lg:p-6 rounded-[10px] cursor-pointer lg:w-[285px]">
+        <div className="w-[180px] lg:w-full h-[180px] lg:h-[214px]  rounded-[10px] mb-3 items-center ">
+          <img src={image} alt="img" className="object-cover" />
         </div>
         <div className="absolute top-[50%] left-[50%] translate-y-[-50%] -translate-x-2/4 invisible group-hover:visible transition-all ease-in duration-300 items-center">
           <div className="flex items-center gap-x-4">
             <Link
               to="/cart"
-              className="w-[50px] h-[50px]  text-orange flex items-center border border-orange rounded-full bg-white p-3 justify-center hover:bg-orange hover:text-white"
+              className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]  text-orange flex items-center border border-orange rounded-full bg-white p-2 lg:p-3 justify-center hover:bg-orange hover:text-white"
             >
               <FaOpencart size={20} />
             </Link>
-            <div className="w-[50px] h-[50px]  text-orange flex items-center border border-orange rounded-full bg-white p-3 justify-center hover:bg-orange hover:text-white">
+            <div className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]  text-orange flex items-center border border-orange rounded-full bg-white p-2 lg:p-3  justify-center hover:bg-orange hover:text-white">
               <IoIosHeartEmpty size={20} />
             </div>
-            <div className="w-[50px] h-[50px]  text-orange flex items-center border border-orange rounded-full bg-white p-3 justify-center hover:bg-orange hover:text-white">
+            <div className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]  text-orange flex items-center border border-orange rounded-full bg-white p-2 lg:p-3 justify-center hover:bg-orange hover:text-white">
               <IoShareSocialOutline size={20} />
             </div>
           </div>
         </div>
         {discount && (
           <div className="absolute top-3 right-6 bg-orange px-3 py-1  w-fit rounded-[5px]">
-            <span className="text-[16px] font-bold text-white font-montserrat">
-              -{discount}%
+            <span className=" text-[14px] lg:text-[16px] font-bold text-white font-montserrat">
+              {discount}%
             </span>
           </div>
         )}
         <div>
-          <h6 className="mb-2 text-sm font-normal text-black font-montserra uppercase tracking-[15px]">
+          <h6 className="mb-2 text-sm font-normal text-black font-montserra uppercase lg:tracking-[15px] tracking-[10px]">
             {pCategory}
           </h6>
           {pName?.length > 20 ? (
@@ -65,7 +65,7 @@ const ProductCard = ({
             >
               <Link
                 to={`/product/${id}`}
-                className="text-xl font-semibold text-black font-poppins "
+                className="text-lg lg:text-xl font-semibold text-black font-poppins "
               >
                 {pName}
               </Link>
@@ -73,7 +73,7 @@ const ProductCard = ({
           ) : (
             <Link
               to={`/product/${id}`}
-              className="text-xl font-semibold text-black font-poppins 
+              className="text-lg lg:text-xl font-semibold text-black font-poppins 
                group-hover:text-orange transition-all ease-in-out duration-300"
             >
               {pName}
@@ -86,7 +86,7 @@ const ProductCard = ({
             </span>
           </div>
           <div className="flex items-center gap-x-2">
-            <p className="text-[24px] font-semibold text-black font-poppins group-hover:text-orange transition-all ease-in-out duration-300">
+            <p className=" text-[20px] lg:text-[24px] font-semibold text-black font-poppins group-hover:text-orange transition-all ease-in-out duration-300">
               ${getDiscountPrice(price, discount)}
             </p>
             {discount && (

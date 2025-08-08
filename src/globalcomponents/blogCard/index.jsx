@@ -45,9 +45,9 @@ const BlogCard = ({ pathname, ...props }) => {
   const BlogPageCard = () =>
     !isHomePage && (
       <>
-        <div className="border border-transparent p-6 hover:border-white01 transition-all ease-in duration-300 hover:rounded-[25px]">
-          <div className="max-h-[406px] overflow-hidden rounded-[25px] relative">
-            <div className="py-1 px-3 bg-orange rounded-[10px] absolute top-4 left-4 text-white text-base font-bold font-montserrat">
+        <div className="border border-transparent p-4 lg:p-6 hover:border-white01 transition-all ease-in duration-300 hover:rounded-[25px]">
+          <div className="max-h-[406px]  overflow-hidden rounded-[25px] relative">
+            <div className="py-1 md:py-2 px-2 md:px-3 bg-orange rounded-[10px] absolute top-4 right-4  text-white text-sm md:text-base font-bold font-montserrat">
               {catagory}
             </div>
             <img
@@ -59,7 +59,7 @@ const BlogCard = ({ pathname, ...props }) => {
           <div className="mt-8">
             <Link
               to={`/blog/${id}`}
-              className="text-[20px] lg:text-[24px] font-semibold text-black font-poppins "
+              className="text-[18px] md:text-[24px] font-semibold text-black font-poppins "
             >
               {title}
             </Link>

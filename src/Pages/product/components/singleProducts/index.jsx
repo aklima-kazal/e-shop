@@ -62,15 +62,15 @@ const SingleProducts = () => {
               Home
             </Link>
             <div className="h-[20px] w-[1px] bg-black flex items-center" />
-            <span className="text-[16px] font-normal !text-black  font-montserrat">
+            <span className="text-[14px] lg:text-[16px] font-normal !text-black  font-montserrat">
               {pCategory}
             </span>
             <div className="h-[20px] w-[1px] bg-black flex items-center" />
-            <span className="text-[16px] font-normal !text-black  font-montserrat">
+            <span className="text-[14px] lg:text-[16px] font-normal !text-black  font-montserrat">
               {brand}
             </span>
             <div className="h-[20px] w-[1px] bg-black flex items-center" />
-            <span className="text-[16px] font-normal !text-black  font-montserrat">
+            <span className="text-[14px] lg:text-[16px] font-normal !text-black  font-montserrat">
               {pName}
             </span>
           </div>

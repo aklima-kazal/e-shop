@@ -13,34 +13,34 @@ const Showcaseheader = () => {
   const { from, to, total } = useSelector((state) => state.pagination);
   return (
     <>
-      <div>
+      <div className="mt-12 lg:mt-0 px-6">
         <h4 className="text-black font-semibold font-poppins text-[36px]">
           Products
         </h4>
-        <p className="text-black font-montserrat font-normal text-[16px] mt-6">
+        <p className="text-black font-montserrat font-normal text-[16px] mt-6 mb-4 lg:mb-0">
           Showing {from} - {to} of {total} results.
         </p>
-        <div className="flex justify-end gap-x-4">
-          <div className=" flex items-center lg:justify-end gap-x-2 lg:gap-x-4 ">
-            <div className=" flex items-center lg:justify-end gap-x-2 lg:gap-x-4 ">
-              <span className="font-normal font-montserrat text-sm lg:text-[16px] text-black">
+        <div className="lg:flex lg:justify-end gap-x-6 lg:gap-x-4">
+          <div className=" flex items-center justify-center gap-x-6 lg:gap-x-4 mb-6 lg:mb-0">
+            <div className=" flex items-center justify-center gap-x-6 lg:gap-x-4 ">
+              <span className="w-[50px] lg:w-[100px] font-normal font-montserrat text-xs lg:text-[16px] text-black">
                 Sort by:
               </span>
-              <div className=" ">
+              <div className="flex items-center lg:justify-end gap-x-2 lg:gap-x-4 w-[120px] lg:w-full">
                 <AllCatagoryMenu
-                  className=" w-full items-center font-montserrat font-bold text-sm lg:text-[16px] text-orange cursor-pointer flex justify-between gap-x-4"
+                  className=" w-full items-center font-montserrat font-bold text-xs lg:text-[16px] text-orange cursor-pointer flex justify-between gap-x-4"
                   icons={true}
                 />
               </div>
             </div>
-            <div className=" flex items-center lg:justify-end gap-x-2 lg:gap-x-4 w-0.5 h-8 bg-white01" />
-            <div className=" flex items-center lg:justify-end gap-x-2 lg:gap-x-4 ">
+            <div className=" flex items-center lg:justify-end gap-x-2 lg:gap-x-4 w-0.5 h-6 lg:h-8 bg-white01" />
+            <div className=" flex items-center lg:justify-end gap-x-2 lg:gap-x-4 lg:w-full">
               <AllCatagoryMenu
-                className=" w-full items-center font-montserrat font-bold text-sm lg:text-[16px] text-orange cursor-pointer flex justify-between gap-x-4"
+                className=" items-center font-montserrat font-bold text-xs lg:text-[16px] text-orange cursor-pointer flex justify-between lg:gap-x-4"
                 icons={true}
               />
             </div>
-            <div className=" flex items-center lg:justify-end gap-x-2 lg:gap-x-4 w-0.5 h-8 bg-white01" />
+            <div className="hidden lg:block gap-x-2 lg:gap-x-4 w-0.5 h-8 bg-white01" />
           </div>
           <div className="flex items-center gap-x-4 ">
             <div

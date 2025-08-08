@@ -14,21 +14,21 @@ const ProductCarts = ({ pCategory, pName, price, qty, id, subTotal }) => {
   };
   return (
     <>
-      <div className="mt-4 px-[56px] py-[32px] border border-transparent hover:border hover:border-white01 transition-all ease-in duration-300 rounded-lg relative group">
-        <div className="grid grid-cols-[2fr_1fr_1fr_1fr] items-center gap-x-12 ">
+      <div className="mt-4 px-[56px] py-[32px] border border-transparent lg:hover:border lg:hover:border-white01 transition-all ease-in duration-300 rounded-lg relative group">
+        <div className="grid grid-cols-[2fr_1fr_1fr_1fr] items-center gap-x-2 lg:gap-x-12 ">
           <div className="flex items-center gap-x-10">
-            <div className="p-2 bg-white03 h-[214px] w-[237px] rounded-[5px] ">
+            <div className="p-2 bg-white03 h-[214px] w-[237px] rounded-[5px] hidden md:block">
               <img
                 src={SubscribeImg}
                 alt="subscribe"
                 className="object-cover h-[90%] max-w-fit "
               />
             </div>
-            <div>
-              <h6 className="font-montserrat font-normal text-sm text-black uppercase tracking-[5px]">
+            <div className="ml-[-70px] lg:ml-0">
+              <h6 className="font-montserrat font-normal text-xs lg:text-sm text-black uppercase tracking-[5px]">
                 {pCategory}
               </h6>
-              <h4 className="font-poppins font-semibold text-xl text-black mb-[46px] mt-[16px]">
+              <h4 className="font-poppins font-semibold text-base lg:text-xl text-black mb-[46px] mt-[16px]">
                 {pName}
               </h4>
               <span className="font-montserrat text-base">
@@ -37,7 +37,7 @@ const ProductCarts = ({ pCategory, pName, price, qty, id, subTotal }) => {
             </div>
           </div>
           <div>
-            <h6 className="font-semibold font-poppins text-xl text-black">
+            <h6 className="font-semibold font-poppins text-base lg:text-xl text-black">
               ${price}
             </h6>
           </div>
@@ -49,7 +49,7 @@ const ProductCarts = ({ pCategory, pName, price, qty, id, subTotal }) => {
             >
               <FaMinus />
             </button>
-            <div className="text-black font-poppins font-semibold text-4xl">
+            <div className="text-black font-poppins font-semibold text-2xl lg:text-4xl">
               {qty}
             </div>
             <button
@@ -61,13 +61,13 @@ const ProductCarts = ({ pCategory, pName, price, qty, id, subTotal }) => {
           </div>
 
           <div>
-            <h6 className="font-semibold font-poppins text-xl text-black">
+            <h6 className="font-semibold font-poppins text-base lg:text-xl text-black">
               ${(qty * price).toFixed(2)}
             </h6>
           </div>
           <div
             role="button"
-            className="absolute top-[50%] right-[50px] translate-y-[-50%] bg-orange rounded-full cursor-pointer p-4 opacity-0 group-hover:opacity-100 transition-all ease-in duration-300 flex items-center justify-center"
+            className="absolute top-[80%] lg:top-[50%] right-[50px] translate-y-[-50%] bg-orange rounded-full cursor-pointer p-4 opacity-0 group-hover:opacity-100 transition-all ease-in duration-300 flex items-center justify-center"
           >
             <FiTrash2 size={25} color="white" />
           </div>

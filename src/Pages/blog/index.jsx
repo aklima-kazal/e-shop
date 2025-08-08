@@ -40,7 +40,7 @@ const Blog = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-[1.2fr_2.8fr] ">
+          <div className="lg:grid lg:grid-cols-[1.2fr_2.8fr] ">
             <LeftBlog />
             <RightBlog />
           </div>

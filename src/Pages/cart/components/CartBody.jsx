@@ -18,24 +18,24 @@ const CartBody = () => {
     <>
       <div className="border-b border-white01 transition-all ease-in duration-300 rounded-[15px]">
         <div className="bg-white02 px-[56px] py-[32px] rounded-[15px]">
-          <div className="grid grid-cols-[2fr_1fr_1fr_1fr]">
+          <div className="grid grid-cols-[2fr_1fr_1fr_1fr] gap-x-14 lg:gap-x-0 ml-[-45px] lg:ml-0">
             <div>
-              <h4 className="font-bold font-montserrat text-base text-black">
+              <h4 className="font-bold font-montserrat text-sm lg:text-base text-black">
                 PRODUCT
               </h4>
             </div>
             <div>
-              <h4 className="font-bold font-montserrat text-base text-black">
+              <h4 className="font-bold font-montserrat text-sm lg:text-base text-black">
                 PRICE
               </h4>
             </div>
             <div>
-              <h4 className="font-bold font-montserrat text-base text-black">
+              <h4 className="font-bold font-montserrat text-sm lg:text-base text-black">
                 QTY
               </h4>
             </div>
             <div>
-              <h4 className="font-bold font-montserrat text-base text-black">
+              <h4 className="font-bold font-montserrat text-sm lg:text-base text-black">
                 TOTAL
               </h4>
             </div>
@@ -59,7 +59,7 @@ const CartBody = () => {
             />
           ))
         )}
-        <div className="mt-12 flex items-center justify-between gap-x-10">
+        <div className="mt-12 flex items-center justify-between lg:gap-x-10">
           <div className="p-8 border border-transparent hover:border hover:border-white01 transition-all ease-in duration-300 rounded-[15px] w-fit flex items-center justify-center gap-x-20">
             <span className="font-normal font-montserrat text-base text-black">
               Enter coupon code (ex: FIRSTPAY)

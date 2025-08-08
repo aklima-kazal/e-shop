@@ -33,12 +33,12 @@ const BlogDetails = () => {
               {id}
             </span>
             <div className="h-[20px] w-[1px] bg-black flex items-center" />
-            <span className="text-[16px] font-normal !text-black  font-montserrat">
+            <span className="text-[14px] lg:text-[16px] font-normal !text-black  font-montserrat">
               {title}
             </span>
           </div>
 
-          <div className="grid grid-cols-[1.2fr_2.8fr] gap-x-2">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_2.8fr] gap-x-2">
             <BlogDetailsLeft />
             <BlogDetailsRight image={image} />
           </div>

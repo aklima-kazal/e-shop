@@ -22,12 +22,15 @@ const CheckoutCount = ({ SingleProduct }) => {
   };
   return (
     <>
-      <div className="flex items-center justify-between mt-10 md:mt-20">
-        <div className="flex items-center gap-x-4 ">
+      <div className="xl:flex items-center justify-between mt-10 md:mt-20">
+        <div className="flex justify-between items-center gap-x-4 mx-[-20px] lg:mx-0">
           {supportData?.slice(1, 4)?.map((item, index) => {
             const Icon = item.icon;
             return (
-              <div className="flex items-center gap-x-4 " key={index}>
+              <div
+                className="flex items-center gap-x-2 lg:gap-x-4 "
+                key={index}
+              >
                 <span className="text-black mb-1">
                   <Icon />
                 </span>
@@ -44,37 +47,39 @@ const CheckoutCount = ({ SingleProduct }) => {
           })}
         </div>
 
-        <div className="flex items-center gap-x-4">
-          <button
-            disabled={disableWhenLessThenOne}
-            className=" hover:bg-white02 cursor-pointer p-4 rounded-full "
-            onClick={() => dispatch(setCountDec())}
-          >
-            <FaMinus />
-          </button>
-          <div className="text-black font-poppins font-semibold text-4xl">
-            {countValue}
+        <div className="flex mt-10 gap-x-6">
+          <div className="flex items-center gap-x-8">
+            <button
+              disabled={disableWhenLessThenOne}
+              className=" hover:bg-white02 cursor-pointer p-4 rounded-full "
+              onClick={() => dispatch(setCountDec())}
+            >
+              <FaMinus />
+            </button>
+            <div className="text-black font-poppins font-semibold text-4xl">
+              {countValue}
+            </div>
+            <button
+              className=" hover:bg-white02 cursor-pointer p-4 rounded-full"
+              onClick={() => dispatch(setCountInc())}
+            >
+              <FaPlus />
+            </button>
           </div>
-          <button
-            className=" hover:bg-white02 cursor-pointer p-4 rounded-full"
-            onClick={() => dispatch(setCountInc())}
-          >
-            <FaPlus />
-          </button>
-        </div>
 
-        <div className="flex items-center gap-x-4">
-          <CommonButton className="!bg-orange !mt-5 !mb-5 !lg:mb-0 !lg:mt-[60px] !px-8 !h-12 !border-none rounded-[10px]">
-            <span className="font-bold font-montserrat text-base lg:text-lg text-white">
-              Buy Now
-            </span>
-          </CommonButton>
-          <button
-            onClick={handleAddToCartAndRedirect}
-            className="text-orange border-orange cursor-pointer p-2 rounded-[12px] border "
-          >
-            <FaOpencart size={25} />
-          </button>
+          <div className="flex items-center gap-x-4">
+            <CommonButton className="!bg-orange !mt-5 !mb-5 !lg:mb-0 !lg:mt-[60px] !px-8 !h-12 !border-none rounded-[10px]">
+              <span className="font-bold font-montserrat text-base lg:text-lg text-white">
+                Buy Now
+              </span>
+            </CommonButton>
+            <button
+              onClick={handleAddToCartAndRedirect}
+              className="text-orange border-orange cursor-pointer p-2 rounded-[12px] border "
+            >
+              <FaOpencart size={25} />
+            </button>
+          </div>
         </div>
       </div>
     </>

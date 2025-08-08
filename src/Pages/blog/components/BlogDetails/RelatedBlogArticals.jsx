@@ -9,7 +9,7 @@ const RelatedBlogArticals = ({ relatedArticals }) => {
   return (
     <>
       <div>
-        <div className="flex items-center justify-between mb-10">
+        <div className="flex items-center justify-between mb-10 mt-[80px] md:mt-0">
           <h3 className="text-[24px] md:text-[36px] font-semibold text-black font-poppins ">
             {t("Related Articals")}
           </h3>
@@ -24,7 +24,7 @@ const RelatedBlogArticals = ({ relatedArticals }) => {
             </span>
           </Link>
         </div>
-        <div className="grid grid-cols-3 gap-x-4">
+        <div className="gap-y-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4">
           {relatedArticals?.slice(0, 3).map((blog) => (
             <BlogCard key={blog.id} {...blog} />
           ))}

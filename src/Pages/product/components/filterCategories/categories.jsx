@@ -11,7 +11,7 @@ const Categories = () => {
             {
               key: "1",
               label: (
-                <h4 className="text-black font-montserrat font-bold text-xl ">
+                <h4 className="text-black font-montserrat font-bold text-base lg:text-xl ">
                   Categories
                 </h4>
               ),
