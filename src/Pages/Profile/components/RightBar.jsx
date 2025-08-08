@@ -1,4 +1,4 @@
-import { useRenderComponent } from "../../../hooks/useRenderComponent";
+import { useRenderComponent } from "../../../hooks/UseRenderComponent";
 
 const RightBar = ({ options }) => {
   const renderComponent = useRenderComponent(options);
