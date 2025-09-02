@@ -1,27 +1,17 @@
-import { Button, Form } from "antd";
-import React from "react";
+import { Alert, Button, Form, message, Select } from "antd";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import OrderCarts from "./OrderCarts";
-import { useNavigate } from "react-router-dom";
-import CheckoutForm from "./CheckoutForm";
 
 const ProductOrderDetails = ({ form }) => {
-  const navigate = useNavigate();
   const cartItems = useSelector((state) => state.cart.items);
   const subTotal = cartItems.reduce(
     (acc, crnt) => acc + crnt.price * crnt.qty,
     0
   );
   let handleRedirectOrder = () => {
-    if (cartItems.length < 1 || !form.isFieldsTouched()) {
-      form.setFields([
-        {
-          name: "",
-          errors: ["This field is required"],
-        },
-      ]);
-    } else {
-      navigate("/payment");
+    if (cartItems.length < 1) {
+      return;
     }
   };
   return (
@@ -33,8 +23,12 @@ const ProductOrderDetails = ({ form }) => {
           </h4>
           <div>
             {cartItems.length === 0 ? (
-              <div className="text-center mt-12 text-[30px] font-montserrat font-bold text-red ">
-                Your Cart is Empty!
+              <div>
+                <Alert
+                  message="Your cart is empty !"
+                  type="info"
+                  className="!mt-12 !text-[32px] !font-montserrat !font-bold !text-purple !text-center"
+                />
               </div>
             ) : (
               cartItems.map((cart, id) => (

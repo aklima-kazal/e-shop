@@ -1,10 +1,25 @@
-import { Button, Form, Input, Select } from "antd";
+import { Alert, Button, Form, Input, Select } from "antd";
 import { t } from "i18next";
+import { useState } from "react";
+import { useBlocker, useNavigate } from "react-router-dom";
 const { Option } = Select;
 
 const CheckoutForm = ({ form }) => {
+  const [isFormValid, setIsFormValid] = useState(false);
+  const navigate = useNavigate();
+  useBlocker(() => {
+    if (!isFormValid) {
+      return false; // Block navigation
+    }
+    return true; // Allow navigation
+  }, true);
   const handleFinish = () => {
-    console.log("finish");
+    setIsFormValid(true);
+    navigate("/payment");
+  };
+  <Alert message="Form submitted successfully" type="success" />;
+  const handleFinishFailed = () => {
+    setIsFormValid(false);
   };
   return (
     <>
@@ -16,6 +31,7 @@ const CheckoutForm = ({ form }) => {
           <Form
             form={form}
             onFinish={handleFinish}
+            onFinishFailed={handleFinishFailed}
             rootClassName="custom-form"
             className="grid grid-cols-2 gap-x-6 gap-y-18"
           >
@@ -27,7 +43,7 @@ const CheckoutForm = ({ form }) => {
               }
               name={"firstName"}
               required
-              rules={[{ required: true, message: "This field is required" }]}
+              rules={[{ required: true }]}
             >
               <Input
                 className="!border !border-black01 !rounded-[10px] !p-4"
@@ -43,7 +59,7 @@ const CheckoutForm = ({ form }) => {
               }
               name={"lastName"}
               required
-              rules={[{ required: true, message: "This field is required" }]}
+              rules={[{ required: true }]}
             >
               <Input
                 className="!border !border-black01 !rounded-[10px] !p-4"
@@ -77,7 +93,7 @@ const CheckoutForm = ({ form }) => {
               rules={[
                 {
                   required: true,
-                  message: "This field is required",
+
                   type: "email",
                 },
               ]}
@@ -177,11 +193,14 @@ const CheckoutForm = ({ form }) => {
                   ZIP Code
                 </p>
               }
+              name={"ZIP Code"}
+              required
               rules={[
                 {
+                  name: "ZIP Code",
+
                   required: true,
                   message: "This field is required",
-                  type: "ZIP Code",
                 },
               ]}
             >
@@ -198,7 +217,7 @@ const CheckoutForm = ({ form }) => {
                     Other Notes
                   </p>
                 }
-                d
+                required
                 rules={[
                   {
                     required: true,
