@@ -25,7 +25,7 @@ const RelatedBlogArticals = ({ relatedArticals }) => {
           </Link>
         </div>
         <div className="gap-y-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4">
-          {relatedArticals?.slice(0, 3).map((blog) => (
+          {relatedArticals?.map((blog) => (
             <BlogCard key={blog.id} {...blog} />
           ))}
         </div>
