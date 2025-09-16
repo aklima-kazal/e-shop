@@ -16,9 +16,9 @@ const ProductOrderDetails = ({ form }) => {
   };
   return (
     <>
-      <div className="mt-10 bg-white02 p-8 rounded-[15px] h-[700px] overflow-y-auto flex flex-col justify-between">
+      <div className="mt-10 bg-white02 p-6 md:p-8 rounded-[15px] h-[700px] overflow-y-auto flex flex-col justify-between">
         <div>
-          <h4 className="font-semibold font-poppins text-[24px] text-black ] mb-8">
+          <h4 className="font-semibold font-poppins text-[24px] text-black  mb-8">
             Order Details
           </h4>
           <div>
@@ -27,7 +27,7 @@ const ProductOrderDetails = ({ form }) => {
                 <Alert
                   message="Your cart is empty !"
                   type="info"
-                  className="!mt-12 !text-[32px] !font-montserrat !font-bold !text-purple !text-center"
+                  className="!mt-12 !text-[32px] !font-montserrat !font-bold !text-red-500 animate-bounce !text-center !bg-white !border !border-none !shadow-2xl !py-4"
                 />
               </div>
             ) : (

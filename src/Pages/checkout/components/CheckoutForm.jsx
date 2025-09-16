@@ -17,23 +17,23 @@ const CheckoutForm = ({ form }) => {
     setIsFormValid(true);
     navigate("/payment");
   };
-  <Alert message="Form submitted successfully" type="success" />;
+
   const handleFinishFailed = () => {
     setIsFormValid(false);
   };
   return (
     <>
       <div>
-        <h4 className="font-semibold font-poppins text-[36px] text-black w-[70%] leading-[60px] mb-10">
+        <h4 className="font-semibold font-poppins text-2xl md:text-[36px] text-black w-[70%] leading-[60px] md:mb-10">
           Billing Details
         </h4>
-        <div className="mt-10">
+        <div className="md:mt-10">
           <Form
             form={form}
             onFinish={handleFinish}
             onFinishFailed={handleFinishFailed}
             rootClassName="custom-form"
-            className="grid grid-cols-2 gap-x-6 gap-y-18"
+            className="grid grid-cols-2 gap-x-4 md:gap-y-52 lg:gap-x-6 lg:gap-y-18"
           >
             <Form.Item
               label={

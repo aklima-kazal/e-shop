@@ -68,7 +68,7 @@ const AccountDetails = () => {
             htmlType="submit"
             className="!text-white !bg-orange !font-semibold !font-poppins !text-[16px] !h-[48px] !px-2  !rounded-[8px] !flex !items-center !justify-center !w-[180px] "
           >
-            Create Account
+            Edit Profile
           </Button>
         </Form>
       </div>

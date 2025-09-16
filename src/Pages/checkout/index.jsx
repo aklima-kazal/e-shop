@@ -30,10 +30,10 @@ const Cheakout = () => {
               {pageName}
             </span>
           </div>
-          <div className="font-bold font-poppins text-[56px] text-center">
+          <div className="font-bold font-poppins text-[40px] md:text-[56px] text-center">
             <h4 className="mt-20 ">Your Cheakout</h4>
           </div>
-          <div className="mt-12 grid grid-cols-[1.8fr_1fr] gap-x-12">
+          <div className="md:mt-12 md:grid md:grid-cols-[1.8fr_1fr] gap-x-12">
             <CheckoutForm form={form} />
             <ProductOrderDetails form={form} />
           </div>

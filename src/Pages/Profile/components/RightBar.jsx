@@ -1,4 +1,5 @@
 import { useRenderComponent } from "../../../hooks/useRenderComponent";
+import AccountDetails from "./AccountDetails";
 
 const RightBar = ({ options }) => {
   const renderComponent = useRenderComponent(options);
@@ -24,6 +25,9 @@ const RightBar = ({ options }) => {
           </div>
         </div>
         <div className="mt-10">{renderComponent}</div>
+        <div>
+          <AccountDetails />
+        </div>
       </div>
     </>
   );
