@@ -6,6 +6,8 @@ import BlogDetailsRight from "./BlogDetailsRight";
 import RelatedBlogArticals from "./RelatedBlogArticals";
 import Container from "../../../../globalcomponents/Container";
 import { Button } from "antd";
+import { PiClockFill } from "react-icons/pi";
+import { RiUserFill } from "react-icons/ri";
 
 const BlogDetails = () => {
   const [initialData, setInitialData] = useState(6);
@@ -13,6 +15,7 @@ const BlogDetails = () => {
   const loadMore = () => {
     setInitialData((prev) => prev + 6);
   };
+
   const { id } = useParams(); // ✅ Get blog id from route param
 
   // ✅ Find the clicked blog
@@ -58,9 +61,7 @@ const BlogDetails = () => {
           {/* Related Articles Section */}
           {relatedArticals.length > 0 && (
             <div className="mt-16">
-              <h2 className="text-2xl font-bold font-montserrat text-black mb-6">
-                Related Articles
-              </h2>
+              <RelatedBlogArticals />
 
               {/* ✅ Grid Layout for related blogs */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -68,12 +69,12 @@ const BlogDetails = () => {
                   <Link
                     to={`/blog/${item.id}`}
                     key={item.id}
-                    className="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
+                    className=" bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
                   >
                     <img
                       src={item.image}
                       alt={item.title}
-                      className=" h-80 w-full object-cover group-hover:scale-105 transition-transform duration-300 overflow-hidden"
+                      className=" h-80 w-full object-cover  overflow-hidden"
                     />
                     <div className="p-4">
                       <p className="text-sm text-gray-500 font-montserrat">
@@ -83,23 +84,36 @@ const BlogDetails = () => {
                         {item.title}
                       </h3>
                     </div>
+                    <div className="flex items-center justify-between p-4 mt-8">
+                      <div className="flex items-center gap-x-2">
+                        <RiUserFill size={20} color="#303030" />
+                        <span>{item.postedBy}</span>
+                      </div>
+                      <div className="flex items-center gap-x-2">
+                        <PiClockFill color="#303030" size={20} />
+                        <span className="font-montserrat font-normal text-[14px]">
+                          {item.date}
+                        </span>
+                      </div>
+                    </div>
                   </Link>
                 ))}
               </div>
             </div>
           )}
         </div>
-        {initialData < TechTalksData?.length && (
-          <div className="flex items-center justify-center">
-            <Button
-              onClick={loadMore}
-              className="mt-10 !text-base !font-bold !font-montserrat !text-orange !px-[40px] !h-13 !border !border-orange !rounded-[10px]"
-            >
-              Load More
-            </Button>
-          </div>
-        )}
       </Container>
+      {initialData < relatedArticals?.length && (
+        <div className="flex items-center justify-center">
+          <Button
+            onClick={loadMore}
+            disabled={!relatedArticals || relatedArticals.length === 0}
+            className="mt-10 !text-base !font-bold !font-montserrat !text-orange !px-[40px] !h-13 !border !border-orange !rounded-[10px]"
+          >
+            Load More
+          </Button>
+        </div>
+      )}
     </>
   );
 };

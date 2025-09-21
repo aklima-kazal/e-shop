@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { CgArrowLongRight } from "react-icons/cg";
 
-const RelatedBlogArticals = ({ relatedArticals }) => {
+const RelatedBlogArticals = () => {
   const { t } = useTranslation();
   return (
     <>
@@ -23,11 +23,6 @@ const RelatedBlogArticals = ({ relatedArticals }) => {
               <CgArrowLongRight size={30} />
             </span>
           </Link>
-        </div>
-        <div className="gap-y-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4">
-          {relatedArticals?.map((blog) => (
-            <BlogCard key={blog.id} {...blog} />
-          ))}
         </div>
       </div>
     </>
