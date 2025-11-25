@@ -24,7 +24,7 @@ const CheckoutForm = ({ form }) => {
   return (
     <>
       <div>
-        <h4 className="font-semibold font-poppins text-2xl md:text-[36px] text-black w-[70%] leading-[60px] md:mb-10">
+        <h4 className="font-semibold font-poppins text-[20px] md:text-[36px] text-black w-[70%] leading-[60px] md:mb-10">
           Billing Details
         </h4>
         <div className="md:mt-10">
@@ -33,11 +33,11 @@ const CheckoutForm = ({ form }) => {
             onFinish={handleFinish}
             onFinishFailed={handleFinishFailed}
             rootClassName="custom-form"
-            className="grid grid-cols-2 gap-x-4 md:gap-y-52 lg:gap-x-6 lg:gap-y-18"
+            className="grid grid-cols-1 md:grid-cols-2 gap-x-4 md:gap-y-52 lg:gap-x-6 lg:gap-y-18"
           >
             <Form.Item
               label={
-                <p className="font-bold font-montserrat text-[16px] text-black ">
+                <p className="font-bold font-montserrat text-[14px] md:text-[16px] text-black ">
                   First Name
                 </p>
               }
@@ -53,7 +53,7 @@ const CheckoutForm = ({ form }) => {
 
             <Form.Item
               label={
-                <p className="font-bold font-montserrat text-[16px] text-black ">
+                <p className="font-bold font-montserrat text-[14px] md:text-[16px] text-black ">
                   Last Name
                 </p>
               }
@@ -68,7 +68,7 @@ const CheckoutForm = ({ form }) => {
             </Form.Item>
             <Form.Item
               label={
-                <p className="font-bold font-montserrat text-[16px] text-black ">
+                <p className="font-bold font-montserrat text-[14px] md:text-[16px] text-black ">
                   Phone Number
                 </p>
               }
@@ -84,7 +84,7 @@ const CheckoutForm = ({ form }) => {
 
             <Form.Item
               label={
-                <p className="font-bold font-montserrat text-[16px] text-black ">
+                <p className="font-bold font-montserrat text-[14px] md:text-[16px] text-black ">
                   Email Address
                 </p>
               }
@@ -104,10 +104,10 @@ const CheckoutForm = ({ form }) => {
               />
             </Form.Item>
 
-            <div className="col-span-2">
+            <div className="col-span-1 md:col-span-2">
               <Form.Item
                 label={
-                  <p className="font-bold font-montserrat text-[16px] text-black ">
+                  <p className="font-bold font-montserrat text-[14px] md:text-[16px] text-black ">
                     Address
                   </p>
                 }
@@ -129,7 +129,7 @@ const CheckoutForm = ({ form }) => {
 
             <Form.Item
               label={
-                <p className="font-bold font-montserrat text-[16px] text-black ">
+                <p className="font-bold font-montserrat text-[14px] md:text-[16px] text-black ">
                   Country
                 </p>
               }
@@ -149,7 +149,7 @@ const CheckoutForm = ({ form }) => {
 
             <Form.Item
               label={
-                <p className="font-bold font-montserrat text-[16px] text-black ">
+                <p className="font-bold font-montserrat text-[14px] md:text-[16px] text-black ">
                   State
                 </p>
               }
@@ -169,7 +169,7 @@ const CheckoutForm = ({ form }) => {
 
             <Form.Item
               label={
-                <p className="font-bold font-montserrat text-[16px] text-black ">
+                <p className="font-bold font-montserrat text-[14px] md:text-[16px] text-black ">
                   City
                 </p>
               }
@@ -189,7 +189,7 @@ const CheckoutForm = ({ form }) => {
 
             <Form.Item
               label={
-                <p className="font-bold font-montserrat text-[16px] text-black ">
+                <p className="font-bold font-montserrat text-[14px] md:text-[16px] text-black ">
                   ZIP Code
                 </p>
               }
@@ -210,10 +210,10 @@ const CheckoutForm = ({ form }) => {
               />
             </Form.Item>
 
-            <div className="col-span-2">
+            <div className="col-span-1 md:col-span-2">
               <Form.Item
                 label={
-                  <p className="font-bold font-montserrat text-[16px] text-black ">
+                  <p className="font-bold font-montserrat text-[14px] md:text-[16px] text-black ">
                     Other Notes
                   </p>
                 }

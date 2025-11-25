@@ -9,9 +9,9 @@ import { IoIosLogOut } from "react-icons/io";
 const LeftBar = ({ setOptions }) => {
   return (
     <>
-      <div className="bg-white border border-white01 p-8 rounded-[24px] ">
+      <div className="bg-white border border-white01 p-6 md:p-8 rounded-[24px] ">
         <div className="text-center border-b border-gray pb-12">
-          <div className="w-[252px] h-[252px] bg-white03 border border-white01 rounded-full mx-auto"></div>
+          <div className="w-[200px] md:w-[252px] h-[200px] md:h-[252px] bg-white03 border border-white01 rounded-full mx-auto"></div>
           <h4 className="text-2xl font-semibold text-black font-poppins text-center mt-4">
             Amelia Robert
           </h4>

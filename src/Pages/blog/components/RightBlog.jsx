@@ -1,6 +1,5 @@
 import React, { use, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { CgArrowLongRight } from "react-icons/cg";
 import { Link, useLocation } from "react-router-dom";
 import BlogCard from "../../../globalcomponents/blogCard";
 import { TechTalksData } from "../../home/components/techTalks/TechTalksData";

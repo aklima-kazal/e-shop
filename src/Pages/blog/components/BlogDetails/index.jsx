@@ -16,16 +16,16 @@ const BlogDetails = () => {
     setInitialData((prev) => prev + 6);
   };
 
-  const { id } = useParams(); // ✅ Get blog id from route param
+  const { id } = useParams(); // Get blog id from route param
 
-  // ✅ Find the clicked blog
+  //  Find the clicked blog
   const blog = TechTalksData.find((item) => String(item.id) === id);
 
   if (!blog) {
     return <div className="text-center py-20 text-red-500">Blog not found</div>;
   }
 
-  // ✅ Filter related blogs by category
+  // Filter related blogs by category
   const relatedArticals = TechTalksData.filter(
     (item) => item.catagory === blog.catagory && String(item.id) !== id
   );
@@ -63,11 +63,10 @@ const BlogDetails = () => {
             <div className="mt-16">
               <RelatedBlogArticals />
 
-              {/* ✅ Grid Layout for related blogs */}
+              {/*  Grid Layout for related blogs */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {relatedArticals?.slice(0, initialData).map((item) => (
-                  <Link
-                    to={`/blog/${item.id}`}
+                  <div
                     key={item.id}
                     className=" bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
                   >
@@ -77,10 +76,10 @@ const BlogDetails = () => {
                       className=" h-80 w-full object-cover  overflow-hidden"
                     />
                     <div className="p-4">
-                      <p className="text-sm text-gray-500 font-montserrat">
+                      <p className="text-sm text-white font-montserrat bg-orange py-1 px-2 inline-block rounded-lg">
                         {item.catagory}
                       </p>
-                      <h3 className="mt-2 text-lg font-semibold font-montserrat text-black group-hover:text-orange">
+                      <h3 className="mt-2 text-lg font-semibold font-montserrat text-black ">
                         {item.title}
                       </h3>
                     </div>
@@ -96,7 +95,7 @@ const BlogDetails = () => {
                         </span>
                       </div>
                     </div>
-                  </Link>
+                  </div>
                 ))}
               </div>
             </div>
