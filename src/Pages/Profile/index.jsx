@@ -14,7 +14,7 @@ const UserProfile = () => {
         </Helmet>
         <div className="px-10 mt-[80px]">
           <Container>
-            <div className=" grid grid-cols-[1fr_3.8fr] gap-x-20">
+            <div className=" grid md:grid-cols-[1fr_3.8fr] gap-x-20">
               <LeftBar setOptions={setOptions} />
               <RightBar options={options} />
             </div>

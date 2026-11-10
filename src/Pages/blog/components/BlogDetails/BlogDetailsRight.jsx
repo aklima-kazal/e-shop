@@ -1,6 +1,6 @@
 import React from "react";
 
-const BlogDetailsRight = ({ image, title }) => {
+const BlogDetailsRight = ({ image }) => {
   return (
     <>
       <div className="mt-[50px] lg:mt-0">

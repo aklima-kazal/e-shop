@@ -1,17 +1,7 @@
-import React, { use, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { CgArrowLongRight } from "react-icons/cg";
 import { Link, useLocation } from "react-router-dom";
-
-import BlogCard from "../../globalcomponents/blogCard";
-import { TechTalksData } from "../home/components/techTalks/TechTalksData";
 import LeftBlog from "./components/LeftBlog";
 import RightBlog from "./components/RightBlog";
-import { BlogData } from "./components/BlogData";
-
-import { featuredData } from "../home/components/featuredProducts/featuredData";
-import { setRange } from "../../service/redux/feature/paginationSlice";
-import { useDispatch } from "react-redux";
 import Container from "../../globalcomponents/Container";
 
 const Blog = () => {

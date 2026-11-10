@@ -4,17 +4,17 @@ import { EyeInvisibleOutlined, EyeTwoTone } from "@ant-design/icons";
 const AccountDetails = () => {
   return (
     <>
-      <div className=" ">
-        <h4 className="text-4xl font-semibold text-black font-poppins border-b-4 border-orange  inline-block pb-2">
+      <div className="mt-6 md:mt-0 ">
+        <h4 className=" text-2xl md:text-4xl font-semibold text-black font-poppins border-b-4 border-orange  inline-block pb-2">
           Account Details
         </h4>
         <Form
           rootClassName="custom-form"
-          className="grid grid-cols-2 gap-y-12 gap-x-4"
+          className=" grid grid-cols-1 md:grid-cols-2 md:gap-y-16 gap-x-4"
         >
           <Form.Item
             label={
-              <p className="font-bold font-montserrat text-[16px] text-black ">
+              <p className="font-bold font-montserrat text-sm md:text-[16px] text-black ">
                 First Name
               </p>
             }
@@ -25,7 +25,7 @@ const AccountDetails = () => {
           </Form.Item>
           <Form.Item
             label={
-              <p className="font-bold font-montserrat text-[16px] text-black ">
+              <p className="font-bold font-montserrat text-sm md:text-[16px] text-black ">
                 Last Name
               </p>
             }
@@ -37,7 +37,7 @@ const AccountDetails = () => {
 
           <Form.Item
             label={
-              <p className="font-bold font-montserrat text-[16px] text-black ">
+              <p className="font-bold font-montserrat text-sm md:text-[16px] text-black ">
                 Email Address
               </p>
             }
@@ -48,7 +48,7 @@ const AccountDetails = () => {
           </Form.Item>
           <Form.Item
             label={
-              <p className="font-bold font-montserrat text-[16px] text-black ">
+              <p className="font-bold font-montserrat text-sm md:text-[16px] text-black ">
                 Password
               </p>
             }
@@ -66,7 +66,7 @@ const AccountDetails = () => {
 
           <Button
             htmlType="submit"
-            className="!text-white !bg-orange !font-semibold !font-poppins !text-[16px] !h-[48px] !px-2  !rounded-[8px] !flex !items-center !justify-center !w-[180px] !mt-8"
+            className="!text-white !bg-orange !font-semibold !font-poppins !text-sm md:!text-[16px] !h-[48px] !px-2  !rounded-[8px] !flex !items-center !justify-center !w-[180px] !mt-8"
           >
             Edit Profile
           </Button>
